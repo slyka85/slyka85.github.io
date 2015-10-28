@@ -493,7 +493,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+   /* background-color: #fed136;*/
 }
 
 .timeline>li .timeline-image h4 {
@@ -652,7 +652,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    background-color: #0097A7;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
