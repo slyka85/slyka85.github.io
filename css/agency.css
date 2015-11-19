@@ -119,14 +119,16 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #fed136;
+/*    border-color: #fed136;*/
+    border-color: #4C2236 !important;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+/*    background-color: #fed136;*/
+    background-color: #4C1831 !important;
 }
 
 .btn-xl:hover,
@@ -136,7 +138,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
     border-color: #f6bf01;
     color: #fff;
-    background-color: #fec503;
+    background-color: #3D1328 !important;
 }
 
 .btn-xl:active,
@@ -176,7 +178,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+  /*  color: #fed136;*/
+  color: #822954 !important;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -215,18 +218,20 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+     color: #fff;
+/*    font-size: 16px !important;*/
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+   /* background-color: #fed136;*/
+   background-color: #783957 !important;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+    color: #fff !important;
     background-color: #fec503;
 }
 
@@ -265,7 +270,11 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/me-front.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 10, 20, 0.4), rgba(50, 10, 0, 0.4) ), url(../img/me-front.jpg);
+/* 
+background-image: linear-gradient( to left, rgba(60, 165, 92, 0.5), rgba(181, 172, 73, 0.5) ),  url(../img/me-front.jpg); */
+        
+        
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -314,7 +323,7 @@ header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 75px;
+        font-size: 64px !important;
         font-weight: 700;
         line-height: 75px;
     }
@@ -758,7 +767,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #F54D9E;
 }
 
 .btn:focus,
@@ -879,4 +888,46 @@ body {
 .html-icon {
     height: 100px;
     width: 150px;
+}
+
+
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
 }
