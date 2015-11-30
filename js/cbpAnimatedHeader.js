@@ -42,3 +42,17 @@ var cbpAnimatedHeader = (function() {
 	init();
 
 })();
+
+  $(document).scroll(function () {
+    if (window.scrollY > 100) {
+        $(".intro-text").stop().animate({
+            zoom: 1,
+            opacity: 0
+        });
+    } else {
+        $(".intro-text").stop().animate({
+            zoom: 1,
+            opacity: 1
+        });
+    }
+});
