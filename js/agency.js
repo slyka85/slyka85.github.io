@@ -11,7 +11,7 @@
 
 $(function() {
 
-
+ $('#site-title').addClass('animated bounce');
 
 
     $('a.page-scroll').bind('click', function(event) {
