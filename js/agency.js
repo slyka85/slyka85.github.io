@@ -5,7 +5,15 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+   
+
+  // var deck = new $.scrolldeck();
+
 $(function() {
+
+
+
+
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -14,6 +22,8 @@ $(function() {
         event.preventDefault();
     });
 
+
+ 
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
@@ -54,6 +64,7 @@ $('.navbar-collapse ul li a').click(function() {
    $('body').delay(3000).queue(function(){
    	 $('#get-started-button').removeClass('animated adeInUp');
      $('#get-started-button').addClass('animated rotateIn').clearQueue();
+
     });
               	
 
@@ -72,4 +83,8 @@ $('.navbar-collapse ul li a').click(function() {
 
 
 
+
+
 }); //function ready
+
+
