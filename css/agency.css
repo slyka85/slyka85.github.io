@@ -286,6 +286,7 @@ background-image: linear-gradient( to left, rgba(60, 165, 92, 0.5), rgba(181, 17
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+        height: 100vh;
 }
 
 header .intro-text {
@@ -294,12 +295,17 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
+    height: 140px;
     margin-bottom: 25px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
 }
+
+header .intro-text .intro-lead-in span {
+    font-size: 80%;
+    }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
@@ -964,3 +970,6 @@ body {
     100% { opacity:1; }
 }
 
+#get-started-button {
+    opacity: 1;
+}
