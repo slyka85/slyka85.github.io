@@ -13,7 +13,7 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
+
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
@@ -24,3 +24,50 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+  $("#typed1").typed({
+        strings: ["^1000 Hi! ^500I'm Anya... ^400 and I love "],
+        typeSpeed: 120,
+        backDelay: 500,
+        cursorChar: "|",
+        callback: function() {
+        			noCursor();
+              showThis();
+            }
+  
+      });
+
+
+  
+  		function noCursor() {
+$('.typed-cursor').css({ display: 'none' });
+
+  		}
+
+
+     function showThis(){
+
+        $("#typed2").typed({
+              strings: ["making cool stuff.^100", "to code. <br><br>IT IS NICE TO HAVE YOU HERE ^600 :)"],
+              backDelay: 300,    
+              typeSpeed: 120,
+              backSpeed: 50,
+              
+          });
+
+      };
+
+  // $("#typed2").typed({
+  //       strings: ["It is nice to have you here :)"],
+  //       typeSpeed: 100,
+  //       backDelay: 500,
+  //       loop: false,
+  //       loopCount: false,
+  //       showCursor: true,
+  //       cursorChar: "|"
+  
+  //     });
+
+
+}); //function ready
