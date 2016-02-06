@@ -37,6 +37,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 
  $('#get-started-button').addClass('animated fadeInUp');
+  $("#typed1, #typed2").css('text-shadow', 'rgb(14, 2, 2) 10px 10px 7px');
 
   $("#typed1").typed({
         strings: ["^1000 Hi! ^500I'm Anya... ^400 and I love "],
@@ -62,7 +63,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 
    $('body').delay(3000).queue(function(){
-   	 $('#get-started-button').removeClass('animated adeInUp');
+   	 $('#get-started-button').removeClass('animated fadeInUp');
      $('#get-started-button').addClass('animated rotateIn').clearQueue();
 
     });

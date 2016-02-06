@@ -284,7 +284,17 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: linear-gradient(to bottom, rgba(0, 10, 20, 0.4), rgba(50, 10, 0, 0.4) ), url(../img/me-front.jpg);
+/*    background-image: linear-gradient(to bottom, rgba(0, 10, 20, 0.4), rgba(50, 10, 0, 0.4) ), url(../img/me-front.jpg);*/
+/*    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/laptop-bg.jpg);*/
+/*    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://kaboompics.com/files/upload/o_19slkiib31upa1d2k1vsu10fdbkn7_new.jpg);*/
+/*        background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://s6.favim.com/orig/140806/beautiful-black-coffee-computer-Favim.com-1974488.jpg);*/
+
+/*background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://kaboompics.com/files/upload/o_1a3m4e4c21cr718c87l3dge1r547_new.jpg); */
+/*background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://www191.lunapic.com/do-not-link-here-use-hosting-instead/145472826982130?5870282706); */
+background-image: linear-gradient(to right bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/me-girls-bg.jpeg); 
+
+
+
     background-attachment: fixed;
     background-position: center center;
     background-repeat: none;
@@ -295,6 +305,10 @@ header {
     height: 100vh;
 
 
+}
+@media (max-device-width: 480px) {
+
+header {background-image: linear-gradient(to right bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/me-girls-bg-mobile.jpeg); }
 }
 
 header .intro-text {
@@ -312,7 +326,7 @@ header .intro-text .intro-lead-in {
 }
 
 header .intro-text .intro-lead-in span {
-    font-size: 80%;
+    font-size: 75%;
     }
 
 header .intro-text .intro-heading {
@@ -336,7 +350,7 @@ header .intro-text .intro-heading {
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
         font-style: italic;
-        line-height: 40px;
+        line-height: 30px;
     }
 
     header .intro-text .intro-heading {
@@ -982,4 +996,5 @@ body {
 
 #get-started-button {
     opacity: 1;
+    border-radius: 50px 5px 50px 5px;
 }
