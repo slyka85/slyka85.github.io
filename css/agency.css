@@ -175,6 +175,11 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
+/*   background-color: rgba(34, 34, 34, 0.22);*/
+/*    background-image: -webkit-linear-gradient(rgba(0, 10, 20, 0.4), rgba(61, 61, 61, 0.4)), url(../img/grey-background.jpg);
+    background-image: -o-linear-gradient(rgba(0, 10, 20, 0.4), rgba(61, 61, 61, 0.4)), url(../img/grey-background.jpg);
+    background-image: linear-gradient(rgba(0, 10, 20, 0.4), rgba(61, 61, 61, 0.4)), url(../img/grey-background.jpg);*/
+
 }
 
 .navbar-default .navbar-brand {
@@ -262,8 +267,12 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
-    }
+    opacity: 0.96;
+    box-shadow: 0 2px 21px #4C4B4B;
+    background-image: -webkit-linear-gradient(rgba(0, 10, 20, 0.4), rgba(61, 61, 61, 0.4)), url(../img/grey-background.jpg);
+    background-image: -o-linear-gradient(rgba(0, 10, 20, 0.4), rgba(61, 61, 61, 0.4)), url(../img/grey-background.jpg);
+    background-image: linear-gradient(rgba(0, 10, 20, 0.4), rgba(61, 61, 61, 0.4)), url(../img/grey-background.jpg);
+    }   
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
@@ -356,6 +365,7 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
+
 }
 
 @media(min-width:768px) {
@@ -442,7 +452,7 @@ section h3.section-subheading {
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
-        margin: 0 0 30px;
+        margin: 0 0 70px;
     }
 }
 
@@ -671,7 +681,8 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #0097A7;
+   /* background-color: #0097A7;*/
+   background-color: #696C8E;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;

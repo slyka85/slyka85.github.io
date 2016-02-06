@@ -1,0 +1,84 @@
+/*.navbar-default.navbar-shrink {
+    padding: 10px 0;
+    background-color: rgba(34, 34, 34, 0.22);
+}
+*/
+#portfolio {
+/*	background-color: #985A78;*/
+/*		background-color: #E8E4E6;*/
+background: url(../img/grey-background.jpg);
+}
+/*.section-heading {
+	color: #fff;
+}
+.section-subheading {
+	color: #F2BCE4;
+}*/
+
+.portfolio-caption:before,
+.portfolio-caption:after {
+  z-index: -1;
+  position: absolute;
+  left: 22px;
+  bottom: 12px;
+  width: 40%;
+  height: 10px;
+  background: transparent;
+  content: '';
+  transform-origin: left bottom;
+  transform: skew(-3deg) rotate(-3deg);
+  box-shadow: 0 14px 14px rgba(0, 0, 0, 0.4);
+}
+.portfolio-caption:after {
+  left: auto;
+  right: 22px;
+  transform-origin: right bottom;
+  transform: skew(3deg) rotate(3deg);
+
+}
+.portfolio-item {
+/* background-color: #fff;
+padding-left: 0;
+padding-right: 0;
+margin-left: 5px;
+margin-left: 5px;*/
+margin: 0px 0px 70px;
+
+}
+.portfolio-item a {
+/*	border-top: 10px solid white;*/
+
+}
+.portfolio-item:nth-child(1) { transform: rotate(-7deg);}
+
+.portfolio-item:nth-child(3) {  transform: rotate(7deg);}
+
+.portfolio-item:nth-child(odd):after {
+    position: absolute;
+    top: -34px;
+    left: 15%;
+    content: " ";
+		background: url(../img/portfolio/pin-red.png);
+    background-size: 100% 100%;
+    width: 55px;
+    height: 50px;
+    margin: 2px;
+    float: left;
+    z-index: 100;
+
+}
+.portfolio-item:nth-child(even):after {
+    position: absolute;
+    top: -34px;
+    left: 60%;
+    content: " ";
+    background: url(../img/portfolio/pin-blue.png);
+    transform: rotate(30deg);
+    background-size: 100% 100%;
+    width: 55px;
+    height: 50px;
+    margin: 2px;
+    float: left;
+    z-index: 100;
+
+}
