@@ -289,9 +289,9 @@ header {
 /*    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://kaboompics.com/files/upload/o_19slkiib31upa1d2k1vsu10fdbkn7_new.jpg);*/
 /*        background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://s6.favim.com/orig/140806/beautiful-black-coffee-computer-Favim.com-1974488.jpg);*/
 
-/*background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://kaboompics.com/files/upload/o_1a3m4e4c21cr718c87l3dge1r547_new.jpg); */
+background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/girl-cup.jpg); 
 /*background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://www191.lunapic.com/do-not-link-here-use-hosting-instead/145472826982130?5870282706); */
-background-image: linear-gradient(to right bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/me-girls-bg.jpeg); 
+/*background-image: linear-gradient(to right bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/me-girls-bg.jpeg); */
 
 
 
@@ -994,7 +994,16 @@ body {
     100% { opacity:1; }
 }
 
-#get-started-button {
+#get-started-button
+ {
     opacity: 1;
     border-radius: 50px 5px 50px 5px;
+    font-size: 20px;
 }
+#get-started-button:focus,
+#get-started-button:visited {
+    color: #FFB8C4;
+}
+#get-started-button:hover {
+    color: #FFB8C4;
+} 
