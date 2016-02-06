@@ -34,8 +34,8 @@ background: url(../img/grey-background.jpg);
   right: 22px;
   transform-origin: right bottom;
   transform: skew(3deg) rotate(3deg);
-
 }
+
 .portfolio-item {
 /* background-color: #fff;
 padding-left: 0;
