@@ -308,7 +308,7 @@ background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4)
 }
 @media (max-device-width: 480px) {
 
-header {background-image: linear-gradient(to right bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/me-girls-bg-mobile.jpeg); }
+header {background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/girl-cup.jpg); }
 }
 
 header .intro-text {
