@@ -45,8 +45,9 @@ margin-left: 5px;*/
 margin: 0px 0px 70px;
 
 }
-.portfolio-item a {
-/*	border-top: 10px solid white;*/
+
+.portfolio-item img {
+width: 100%;
 
 }
 .portfolio-item:nth-child(1) { transform: rotate(-7deg);}
