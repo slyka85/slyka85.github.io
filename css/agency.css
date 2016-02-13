@@ -401,7 +401,8 @@ section h3.section-subheading {
         margin: 0;
     }
        header .intro-text .intro-lead-in {
-        margin-left: 40px;
+          position: absolute;
+    left: calc(50% - 128px);
 }
 }
 @media(min-width:768px) {
