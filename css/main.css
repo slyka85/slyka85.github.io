@@ -200,6 +200,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
+      margin-right: 2px !important;
     border-color: #822954 !important;
     background-color: #822954 !important;
 }
@@ -403,6 +404,10 @@ section h3.section-subheading {
        header .intro-text .intro-lead-in {
           position: absolute;
     left: calc(50% - 128px);
+}
+
+#typed1 {
+    display: inline-block;
 }
 }
 @media(min-width:768px) {
