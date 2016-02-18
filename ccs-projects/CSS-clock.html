@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Clock</title>
+    <style>
+
+
+body {
+      background-color: rgba(255, 236, 0, 0.24);
+}
+  .wrapper {
+  background: #96D2D0;
+  position: relative;
+  /*top: 100px;
+  left: 200px;*/
+  border: 10px solid #eee;
+  box-shadow:
+    0 0 0 5px hsl(0, 0%, 80%),
+    0 0 0 12px hsl(0, 0%, 90%);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transform: rotateX(180deg) scale(0.75);
+ 
+}
+.dot1, .dot2, .dot3, .dot4 {
+
+
+  border: 1px solid lightgrey;
+  height: 12px;
+  width: 12px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+}
+.dot1 {
+  left: 48%;
+  top: 0;
+}
+.dot2 {
+  right: 0;
+  top: 47%;
+}
+.dot3 {
+  left: 48%;
+  bottom: 0;
+}
+.dot4 {
+  left: 0;
+  top: 47%;
+}
+.seconds-arrow {
+    margin: 0;
+    padding: 0;
+  background: red;
+  height: 120px;
+  width: 3px;
+  position: absolute;
+  transform-origin: center top;
+  top: 50%;
+  left: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+    margin-left: -2px;
+
+
+}
+.circle-sm {
+  background: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 48%;
+  left: 47%;
+  box-shadow: 5px 1px 10px #888888;
+}
+.minute-arrow {
+  background: #444;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center top;
+  transition: transform 3s;
+  width: 6px;
+}
+.hour-arrow {
+  background: black;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 90px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform-origin: center top;
+  transition: transform 3s;
+  width: 9px;
+}
+
+    @-webkit-keyframes clock-arrow-spin {
+        100% {
+        transform: rotate(-360deg);      
+            }
+        }
+ .seconds-arrow {
+      box-shadow: 4px 4px 3px #888888;
+    
+       animation: 60s clock-arrow-spin steps(60, end) infinite;
+  }
+ .minute-arrow {
+        animation: 3600s clock-arrow-spin steps(60, end) infinite;
+ }
+
+ .hour-arrow {
+     animation: 86400 clock-arrow-spin steps(60, end) infinite;
+ }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+      <h3>Hi! I am CSS Clock!</h3>
+    </div>
+    <div class="wrapper">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+        <div class="dot4"></div>
+        <div class="seconds-arrow"></div>
+        <div class="minute-arrow"> </div>
+        <div class="hour-arrow"></div>
+        <div class="circle-sm"></div>
+    </div>
+
+</body>
+</html>

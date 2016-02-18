@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fish Tank</title>
+    <style>
+ body {
+/*  background: linear-gradient(to left, #9CE5D8 , #2A8A99);*/
+/*background: linear-gradient(to bottom, #43CEB4 , #185a9d);*/
+  background: linear-gradient(to bottom, #43C8CE, #294445, #185a9d);
+  overflow: hidden;
+}
+.fish-tank-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  /*overflow: hidden;*/
+  z-index: 10;
+}
+div {
+  margin-top: -17%;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  top: 30%;
+  position: absolute;
+}
+  .big-fish {
+    border: 5px solid #DEDDB4;
+   }
+.fin1, .fin2 {
+  width: 20px;
+  height: 40px;
+  /*background: #FBC02D;*/
+  background: #FF7043;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+
+
+}
+.fin1 {
+    bottom: -20px;
+    left: -26px;
+    transform: rotate(100deg);
+}
+.fin2 { 
+    bottom: -35px;
+    transform: rotate(38deg);
+    left: -20px;
+}
+.eye {
+    width: 12px;
+    height: 12px;
+    background: #099CAE;
+    border-radius: 50%;
+    position: absolute;
+    right: 22px;
+    top: -25px;
+    border: 7px solid white;
+}
+.top-fin {
+    width: 32px;
+    height: 19px;
+    background-color: #FF7043;
+    position: absolute;
+    border-radius: 0 50% 50% 50%;
+    top: -7px;
+    /* z-index: -1; */
+    left: -7px;
+}
+.mouth {
+    width: 35px;
+    height: 30px;
+    border: solid 5px #898383;
+    position: absolute;
+    bottom: 10px;
+    right: -4px;
+    border-radius: 0 0 30px 30px;
+    border-color: transparent transparent #795548 transparent;
+
+}
+
+.small-fish { width: 45px; height: 30px; background-color: black;}
+.small-fish .fin1, .small-fish .fin2, .small-fish .eye {transform: scale(0.5);}
+.small-fish .eye {  bottom: 18px; right: 2px;}
+.small-fish .fin1 { bottom: -17px; transform: scale(0.5) rotate(-60deg); left: -6px; }
+.small-fish .fin2 { bottom: -25px; transform: scale(0.5) rotate(-120deg); left: -6px;}
+.big-fish { 
+    animation: fish-swim 17s 0.000s linear infinite;
+    width: 80px;
+    height: 70px;
+    border-radius: 66% 45% 65% 1%;
+/*    background-color: #FF8A65;*/
+     background-color: #FFAB91;
+    transform: rotate(40deg);
+}
+.small-fish:nth-of-type(2)  { animation: fish-swim 17s -14s linear infinite; background-color: #ef5350;}
+.small-fish:nth-of-type(3)  { animation: fish-swim 17s -12s linear infinite; }
+.small-fish:nth-of-type(4)  { animation: fish-swim 17s -10s linear infinite; }
+.small-fish:nth-of-type(5)  { animation: fish-swim 17s -5s linear infinite; }
+
+
+@keyframes fish-swim {
+  0%   { left:-2%; background: #FFAB91;  }
+  10%  { margin-top: -15%;  }
+  20%  {  margin-top:-7%;  }
+  30%  {  margin-top: -5%; transform: rotate(20deg); z-index: -100; }
+  40%  { margin-top:-5%;  transform: rotate(0deg)}
+  60%  { margin-top:-50%;  }
+  70%  { margin-top: -50%;  }
+  80%  { margin-top:-50%;  }
+  90%  {  margin-top: -50%;  }
+  95%  { transform: rotate(-100deg) }
+  100% { margin-top:-50%; left:100%; }
+}
+    </style>
+</head>
+<body>
+    <span class="fish-tank-container">
+        <!-- Big Fish container -->
+ 
+            <div class="fish big-fish">
+                <p class="fin1"></p>
+                <p class="fin2"></p>
+                <p class="eye"></p>
+                <p class="top-fin"></p>
+                <p class="mouth"></p>
+            </div>
+
+  
+        <!-- Small fish -->
+        <div class="fish small-fish">
+            <p class="fin1"></p>
+            <p class="fin2"></p>
+            <p class="eye"></p>
+        </div>
+        <div class="fish small-fish">
+            <p class="fin1"></p>
+            <p class="fin2"></p>
+            <p class="eye"></p>
+        </div>
+        <div class="fish small-fish">
+            <p class="fin1"></p>
+            <p class="fin2"></p>
+            <p class="eye"></p>
+        </div>
+        <div class="fish small-fish">
+            <p class="fin1"></p>
+            <p class="fin2"></p>
+            <p class="eye"></p>
+        </div>
+
+    </span>
+
+</body>
+</html>
