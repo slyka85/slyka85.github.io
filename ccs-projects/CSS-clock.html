@@ -7,14 +7,22 @@
     <style>
 
 
+  * {
+    box-sizing: border-box;
+    }  
+
 body {
-      background-color: rgba(255, 236, 0, 0.24);
+/*      background-color: rgba(255, 236, 0, 0.24);*/
+    background-color: rgba(255, 0, 44, 0.24);
+      overflow: hidden;
+          margin: 0;
+    padding: 0;
 }
   .wrapper {
   background: #96D2D0;
-  position: relative;
-  /*top: 100px;
-  left: 200px;*/
+  position: absolute;
+bottom: 450px;
+  left: 700px;
   border: 10px solid #eee;
   box-shadow:
     0 0 0 5px hsl(0, 0%, 80%),
@@ -121,12 +129,81 @@ body {
  }
 
 
+.door {
+    position: absolute;
+    bottom: 138px;
+    left: 410px;
+}
+
+.door-frame {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    width: 200px;
+    height: 400px;
+/*    background-color: #FFFAC2;*/
+    background-color: rgb(207, 155, 164);
+    border: 15px solid rgb(45, 26, 26);
+    border-bottom: 5px solid rgb(45, 26, 26);
+    border-left: 30px solid #251111;
+}
+.door-open {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    width: 173px;
+    height: 400px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 160px solid rgb(54, 17, 17);
+    border-right: 15px solid transparent;
+    animation: door-opening 5s ease 0s infinite alternate;
+}
+
+@-webkit-keyframes door-opening {
+    from {
+       -webkit-transform: perspective(500) rotateY(0deg);
+       -webkit-transform-origin: 0% 0%;
+    }
+    to {
+       -webkit-transform: perspective(500) rotateY(-180deg);
+        -webkit-transform-origin: 0% 0%;
+    }
+}
+
+.inner-door-knob {
+    width: 20px;
+    height: 5px;
+    border-radius: 6px;
+    background-color: #965322;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+}
+
+footer {
+    height: 158px;
+    width: 100%;
+    background-color: grey;
+    bottom: 0;
+    position: absolute;
+    overflow: auto;
+    z-index: -1;
+}
     </style>
 </head>
 <body>
 
+<div class="door">
+<div class="door-frame"></div>
+<div class="door-open">
+  <div class="inner-door-knob"></div>
+</div>
+</div>
+
+
     <div class="header">
-      <h3>Hi! I am CSS Clock!</h3>
+
     </div>
     <div class="wrapper">
         <div class="dot1"></div>
@@ -138,6 +215,8 @@ body {
         <div class="hour-arrow"></div>
         <div class="circle-sm"></div>
     </div>
+
+    <footer class="footer"></footer>
 
 </body>
 </html>
