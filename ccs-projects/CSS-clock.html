@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.3, maximum-scale=1, minimum-scale=0.3" />
     <title>CSS Clock</title>
     <style>
 
@@ -16,7 +17,7 @@
             margin: 0;
             padding: 0;
         }
-        .wrapper {
+        .clock-wrapper {
             background: #96D2D0;
             position: absolute;
             bottom: 480px;
@@ -173,9 +174,113 @@
             background-color: #AA8188;
             bottom: 0;
             position: absolute;
-            overflow: auto;
+   /*         overflow: auto;*/
             z-index: -1;
         }
+
+        .sofa-wrapper {
+            position: absolute;
+            bottom: 352px;
+            left: 800px;
+                transform: scale(1.25, 1.1);
+        }
+
+        .sofa-top {
+            position: absolute;
+            width: 240px;
+            height: 100px;
+            background-color: #EEDEDE;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+                border: 2px solid grey;
+                z-index: 1;
+        }
+
+        .sofa-top:before,
+        .sofa-top:after {
+            top: 40px;
+            content: " ";
+            width: 50px;
+            height: 100px;
+            background-color: #E2CCCC;
+            position: absolute;
+            border-radius: 50px;
+            border: 1px solid grey;
+        }
+              .sofa-top:before {
+                left: -5px;
+                transform: rotate(-10deg);
+              }
+
+              .sofa-top:after {
+                right: -5px;
+                transform: rotate(10deg);
+              }
+
+              .sofa-bottom1 {
+    position: absolute;
+    width: 244px;
+    height: 55px;
+    background-color: #EEDEDE;
+    top: 142px;
+    border-radius: 40px;
+    border: 2px solid grey;
+              }
+
+
+
+        .sofa-bottom1:before {
+            content: " ";
+            position: absolute;
+            background-color: #F2ECEC;
+            height: 44px;
+            width: 184px;
+            top: -45px;
+            left: 25px;
+        }
+
+
+        .sofa-bottom1:after {
+    content: " ";
+    position: absolute;
+    background-color: grey;
+    height: 2px;
+    width: 96%;
+    bottom: 46%;
+    left: 5px;
+        }
+
+        .sofa-bottom2 {
+    position: absolute;
+    top: 197px;
+    left: 30px;
+    width: 184px;
+
+        }
+
+.sofa-bottom2:before,
+.sofa-bottom2:after {
+    position: absolute;
+    content: " ";
+    width: 23px;
+    height: 32px;
+    background-color: #958E8E;
+    border-radius: 10px;
+    bottom: -33px;
+    /* z-index: -1; */
+    border: 1px solid grey;
+    border-top: 1px solid transparent;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+.sofa-bottom2:before {
+    left: 10px;
+}
+.sofa-bottom2:after {
+    right: 10px;
+}
+
     </style>
 </head>
 
@@ -192,7 +297,7 @@
     <div class="header">
 
     </div>
-    <div class="wrapper">
+    <div class="clock-wrapper">
         <div class="dot1"></div>
         <div class="dot2"></div>
         <div class="dot3"></div>
@@ -202,6 +307,12 @@
         <div class="hour-arrow"></div>
         <div class="circle-sm"></div>
     </div>
+
+<div class="sofa-wrapper">
+    <div class="sofa-top"></div>
+    <div class="sofa-bottom1"></div>
+    <div class="sofa-bottom2"></div>
+</div>
 
     <footer class="footer"></footer>
 
