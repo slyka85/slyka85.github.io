@@ -167,7 +167,9 @@
         footer {
             height: 100px;
             width: 100%;
-            background-color: #AA8188;
+        background-image: -webkit-linear-gradient(top right, #6C7D73 0%, #262D29 100%);
+        background-image: -o-linear-gradient(top right, #6C7D73 0%, #262D29 100%);
+        background-image: linear-gradient(to bottom left, #6C7D73 0%, #262D29 100%);
             bottom: 0;
             position: absolute;
             z-index: -1;
@@ -286,10 +288,8 @@
            /*   ------------------------------------------------------    */
 
         @keyframes picture-falling {
-            from {
-                opacity: 0.5;
-            }
-            0%,
+      
+            0% { opacity: 1;}
             15% {
                 transform: rotate(0deg) translateX(0);
                 opacity: 1;
