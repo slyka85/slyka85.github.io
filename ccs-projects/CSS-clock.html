@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.3, maximum-scale=1, minimum-scale=0.3" />
     <title>CSS Clock</title>
     <style>
-
         * {
             box-sizing: border-box;
         }
@@ -21,7 +20,7 @@
             background: #96D2D0;
             position: absolute;
             bottom: 480px;
-            left: 600px;
+            left: 530px;
             border: 10px solid #eee;
             box-shadow: 0 0 0 5px hsl(0, 0%, 80%), 0 0 0 12px hsl(0, 0%, 90%);
             width: 250px;
@@ -123,14 +122,13 @@
             position: absolute;
             bottom: 95px;
             left: 500px;
-/*            transform: scale(1.2);*/
         }
         .door-frame {
             position: absolute;
             right: 50px;
             bottom: 20px;
             width: 200px;
-            height: 400px;    
+            height: 400px;
             background-color: rgb(207, 155, 164);
             border: 15px solid rgb(45, 26, 26);
             border-bottom: 5px solid rgb(45, 26, 26);
@@ -174,17 +172,14 @@
             background-color: #AA8188;
             bottom: 0;
             position: absolute;
-   /*         overflow: auto;*/
             z-index: -1;
         }
-
         .sofa-wrapper {
             position: absolute;
             bottom: 352px;
             left: 800px;
-                transform: scale(1.25, 1.1);
+            transform: scale(1.25, 1.1);
         }
-
         .sofa-top {
             position: absolute;
             width: 240px;
@@ -192,10 +187,9 @@
             background-color: #EEDEDE;
             border-top-left-radius: 60px;
             border-top-right-radius: 60px;
-                border: 2px solid grey;
-                z-index: 1;
+            border: 2px solid grey;
+            z-index: 1;
         }
-
         .sofa-top:before,
         .sofa-top:after {
             top: 40px;
@@ -207,28 +201,23 @@
             border-radius: 50px;
             border: 1px solid grey;
         }
-              .sofa-top:before {
-                left: -5px;
-                transform: rotate(-10deg);
-              }
-
-              .sofa-top:after {
-                right: -5px;
-                transform: rotate(10deg);
-              }
-
-              .sofa-bottom1 {
-    position: absolute;
-    width: 244px;
-    height: 55px;
-    background-color: #EEDEDE;
-    top: 142px;
-    border-radius: 40px;
-    border: 2px solid grey;
-              }
-
-
-
+        .sofa-top:before {
+            left: -5px;
+            transform: rotate(-10deg);
+        }
+        .sofa-top:after {
+            right: -5px;
+            transform: rotate(10deg);
+        }
+        .sofa-bottom1 {
+            position: absolute;
+            width: 244px;
+            height: 55px;
+            background-color: #EEDEDE;
+            top: 142px;
+            border-radius: 40px;
+            border: 2px solid grey;
+        }
         .sofa-bottom1:before {
             content: " ";
             position: absolute;
@@ -238,48 +227,79 @@
             top: -45px;
             left: 25px;
         }
-
-
         .sofa-bottom1:after {
-    content: " ";
-    position: absolute;
-    background-color: grey;
-    height: 2px;
-    width: 96%;
-    bottom: 46%;
-    left: 5px;
+            content: " ";
+            position: absolute;
+            background-color: grey;
+            height: 2px;
+            width: 96%;
+            bottom: 46%;
+            left: 5px;
         }
-
         .sofa-bottom2 {
-    position: absolute;
-    top: 197px;
-    left: 30px;
-    width: 184px;
-
+            position: absolute;
+            top: 197px;
+            left: 30px;
+            width: 184px;
         }
-
-.sofa-bottom2:before,
-.sofa-bottom2:after {
-    position: absolute;
-    content: " ";
-    width: 23px;
-    height: 32px;
-    background-color: #958E8E;
-    border-radius: 10px;
-    bottom: -33px;
-    /* z-index: -1; */
-    border: 1px solid grey;
-    border-top: 1px solid transparent;
-    border-top-left-radius: 1px;
-    border-top-right-radius: 1px;
-}
-
-.sofa-bottom2:before {
-    left: 10px;
-}
-.sofa-bottom2:after {
-    right: 10px;
-}
+        .sofa-bottom2:before,
+        .sofa-bottom2:after {
+            position: absolute;
+            content: " ";
+            width: 23px;
+            height: 32px;
+            background-color: #958E8E;
+            border-radius: 10px;
+            bottom: -33px;
+            border: 1px solid grey;
+            border-top: 1px solid transparent;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 1px;
+        }
+        .sofa-bottom2:before {
+            left: 10px;
+        }
+        .sofa-bottom2:after {
+            right: 10px;
+        }
+        .portrait {
+            position: absolute;
+            left: 900px;
+            bottom: 450px;
+            width: 130px;
+            height: 160px;
+            background: url(mona-lisa.png);
+            animation: picture-falling 5s;
+            opacity: 0;
+            box-shadow: 0 0 10px grey;
+        }
+        @keyframes picture-falling {
+            from {
+                opacity: 0.5;
+            }
+            0%,
+            15% {
+                transform: rotate(0deg) translateX(0);
+                opacity: 1;
+                animation-timing-function: cubic-bezier(.07, 2.02, .67, .57);
+            }
+            30% {
+                transform: translateY(100px) rotate(90deg);
+                animation-timing-function: cubic-bezier(.13, .84, .82, 1);
+            }
+            50% {
+                transform: translateX(20px) translateY(100px) rotateY(90deg, 20deg);
+            }
+            60% {
+                transform: translateY(1000px) rotate(90deg);
+                opacity: 1;
+                z-index: -10;
+            }
+            70% {
+                transform: translateY(1000px) otate(90deg);
+                opacity: 0;
+            }
+        }
 
     </style>
 </head>
@@ -293,10 +313,6 @@
         </div>
     </div>
 
-
-    <div class="header">
-
-    </div>
     <div class="clock-wrapper">
         <div class="dot1"></div>
         <div class="dot2"></div>
@@ -308,11 +324,13 @@
         <div class="circle-sm"></div>
     </div>
 
-<div class="sofa-wrapper">
-    <div class="sofa-top"></div>
-    <div class="sofa-bottom1"></div>
-    <div class="sofa-bottom2"></div>
-</div>
+    <div class="portrait"></div>
+
+    <div class="sofa-wrapper">
+        <div class="sofa-top"></div>
+        <div class="sofa-bottom1"></div>
+        <div class="sofa-bottom2"></div>
+    </div>
 
     <footer class="footer"></footer>
 
