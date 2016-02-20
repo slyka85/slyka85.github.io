@@ -4,32 +4,19 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=1, minimum-scale=0.3" />
     <title>CSS Clock</title>
     <style>
         * {
             box-sizing: border-box;
         }
         body {
-          /*  background-color: rgba(255, 0, 44, 0.24);*/
             overflow: hidden;
             margin: 0;
             padding: 0;
-
-                background: radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%), radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%), radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%), radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%), radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%), radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px, radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px, radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
-    background-color: #b03;
-    background-size: 135px 135px;
-
-/*
-    background-color: #CF9BA4;
-    background-image: linear-gradient(rgba(96, 121, 109, 0.89) 50%, rgb(199, 195, 195) 50%);
-    background-size: 50px 50px;*/
-
-/*    background: linear-gradient(135deg, #241919 22px, #d9ecff 20px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px), linear-gradient(225deg, #241919 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
-    background-color: #241919;
-    background-size: 70px 115px;*/
-
-
+            background-color: #443535;
+            background-image: linear-gradient(45deg, #536058 25%, transparent 25%, rgba(242, 236, 236, 0) 75%, #49554E 75%, #536159), linear-gradient(-45deg, #4D5A53 25%, transparent 25%, transparent 75%, #536058 75%, #4C5851);
+            background-size: 100px 100px;
         }
         .clock-wrapper {
             background: #96D2D0;
@@ -37,7 +24,7 @@
             bottom: 480px;
             left: 530px;
             border: 10px solid #eee;
-            box-shadow: 0 0 0 5px #D4D1D1, 0 0 0 12px #DEDDDD, 0 0 10px 14px grey;
+            box-shadow: 0 0 0 5px #D4D1D1, 0 0 0 12px #DEDDDD, 0 0 12px 14px grey;
             width: 250px;
             height: 250px;
             border-radius: 50%;
@@ -118,7 +105,6 @@
             transition: transform 3s;
             width: 9px;
         }
-
         .seconds-arrow {
             box-shadow: 4px 4px 3px #888888;
             animation: 60s clock-arrow-spin steps(60, end) infinite;
@@ -140,7 +126,7 @@
             bottom: 20px;
             width: 200px;
             height: 400px;
-            background-color: rgb(207, 155, 164);
+            background-color: rgba(207, 155, 164, 0.6);
             border: 15px solid rgb(45, 26, 26);
             border-bottom: 5px solid rgb(45, 26, 26);
             border-left: 30px solid rgb(54, 17, 17);
@@ -158,7 +144,6 @@
             border-right: 15px solid transparent;
             animation: door-opening 5s ease 0s infinite alternate;
         }
-
         .inner-door-knob {
             width: 20px;
             height: 5px;
@@ -171,12 +156,11 @@
         footer {
             height: 100px;
             width: 100%;
-        background-image: -webkit-linear-gradient(top right, #6C7D73 0%, #262D29 100%);
-        background-image: -o-linear-gradient(top right, #6C7D73 0%, #262D29 100%);
-        background-image: linear-gradient(to bottom left, #6C7D73 0%, #262D29 100%);
+            background-image: linear-gradient(to bottom left, #6C7D73 20%, #262D29 100%);
             bottom: 0;
             position: absolute;
             z-index: -1;
+            border-top: 3px solid #443535;
         }
         .sofa-wrapper {
             position: absolute;
@@ -277,23 +261,19 @@
             opacity: 0;
             box-shadow: 0 0 0 10px #C7C3C3, 0 0 0 15px #E6E2E2, 0 0 25px 15px grey;
         }
-
-
-         /*   -------------------   CSS ANIMATIONS   -------------------   */
-
-
+        /*   -------------------   CSS ANIMATIONS   -------------------   */
+        
         @-webkit-keyframes clock-arrow-spin {
             100% {
                 transform: rotate(-360deg);
             }
         }
-
-
-           /*   ------------------------------------------------------    */
-
+        /*   ------------------------------------------------------    */
+        
         @keyframes picture-falling {
-      
-            0% { opacity: 1;}
+            0% {
+                opacity: 1;
+            }
             15% {
                 transform: rotate(0deg) translateX(0);
                 opacity: 1;
@@ -302,11 +282,9 @@
             30% {
                 transform: translateY(100px) rotate(90deg);
                 animation-timing-function: cubic-bezier(.13, .84, .82, 1);
-
             }
             50% {
                 transform: translateX(20px) translateY(100px) rotateY(90deg, 20deg);
-
             }
             60% {
                 transform: translateY(1000px) rotate(90deg);
@@ -319,10 +297,8 @@
                 opacity: 0;
             }
         }
-
-           /*   ------------------------------------------------------    */
-
-
+        /*   ------------------------------------------------------    */
+        
         @-webkit-keyframes door-opening {
             from {
                 -webkit-transform: perspective(500) rotateY(-5deg);
@@ -333,10 +309,7 @@
                 -webkit-transform-origin: 0% 0%;
             }
         }
-
-
-           /*   ------------------------------------------------------    */
-
+        /*   ------------------------------------------------------    */
     </style>
 </head>
 
