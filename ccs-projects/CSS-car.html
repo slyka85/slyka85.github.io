@@ -211,6 +211,22 @@
         position: absolute;
         bottom: 20%;
     }
+
+    .car-top2:after {
+    position: absolute;
+    bottom: 0;
+    right: -200px;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 600px solid rgb(255, 255, 0);
+    z-index: -1;
+    -webkit-mask-box-image: -webkit-linear-gradient(left, black, transparent);
+    -webkit-mask-box-image: -o-linear-gradient(left, black, transparent);
+    -webkit-mask-box-image: linear-gradient(to right, black, transparent);
+    }
     .road {
         width: 250%;
         height: 200px;
