@@ -182,6 +182,21 @@
         top: 0;
         left: 4%;
     }
+
+.car-top1:after {
+    width: 20px;
+    height: 35px;
+    background-color: ivory;
+    position: absolute;
+    bottom: -62px;
+    right: -168px;
+    z-index: 10;
+    content: " ";
+    border-radius: 10px;
+    border: 2px solid black;
+    border-left-style: none;
+}
+
     .window1,
     .window2 {
         background-color: #E2F0F6;
@@ -201,31 +216,31 @@
         border-top-right-radius: 50%;
     }
     .car-top2 {
-        border-radius: 100px 200px 0 0;
-        background-color: #25659C;
-        */ border: 10px solid #72252F;
-        background-color: #9C2535;
-        max-width: 100%;
-        width: 430px;
-        height: 140px;
-        position: absolute;
-        bottom: 20%;
+    border-radius: 100px 200px 0 0;
+    background-color: #25659C;
+    background-color: #9C2535;
+    /* max-width: 100%; */
+    width: 440px;
+    height: 140px;
+    position: absolute;
+    bottom: 20%;
     }
 
     .car-top2:after {
     position: absolute;
-    bottom: 0;
-    right: -200px;
+    bottom: 3px;
+    right: -332px;
     content: " ";
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-right: 600px solid rgb(255, 255, 0);
+    border-bottom: 80px solid transparent;
+    border-right: 500px solid rgb(255, 255, 0);
     z-index: -1;
     -webkit-mask-box-image: -webkit-linear-gradient(left, black, transparent);
     -webkit-mask-box-image: -o-linear-gradient(left, black, transparent);
     -webkit-mask-box-image: linear-gradient(to right, black, transparent);
+    transform: rotate(-5deg);
     }
     .road {
         width: 250%;
