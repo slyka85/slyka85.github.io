@@ -6,25 +6,80 @@
 .features-section,
 .download-app-section,
 .nav,
+nav,
 header,
 footer {
-    max-width: 480px;
+    max-width: 380px;
     	margin: 0;
 	  /*border: 1px solid red;*/
 }
 
+/*NAVIGATION*/
+nav a {
+	margin-top: 30px;
+}
 
-	body {
-/*		font-size: 0.5em;*/
-	}
+#toggle:checked + .hamburger + .nav {
+    top: 100px;
+  }
 
+
+
+.main-navigation {
+	position: relative;
+}
+
+.main-navigation img {
+	width: 60px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2, nav a {
+	font-size: 24px;
+}
+
+h3 {
+		font-size: 16px;
+ }
+
+
+
+.intro-text {
+	padding-top: 100px;
+}
 .hamburger {
-	left: 400px !important;
+	top: 20px;
+	left: 310px;
+}
+.logo-wrapper {
+	top: 10px;
 }
 
 	.mobi-hide {
 		display: none;
 	}
 
+.logo-img {
+		padding-left: 20px;
+    animation: none;
+}
+
+
+/*BUTTONS*/
+a.call-to-action {
+    padding: 15px 55px;
+
+}
+
+
+/*SECTIONS*/
+
+.screens-section img {
+
+	    width: 50px;
+}
 
 }
