@@ -16,7 +16,7 @@
     100% {
         -webkit-transform: scale(0.5) rotate(0deg);
                 transform: scale(0.5) rotate(0deg);
-    }
+    };
 }
 
 @keyframes logo-pulse {
@@ -34,7 +34,7 @@
     100% {
         -webkit-transform: scale(0.5) rotate(0deg);
                 transform: scale(0.5) rotate(0deg);
-    }
+    };
 }
 
  /* ----------------------------------- */
@@ -73,21 +73,17 @@
     vertical-align: middle;
     padding-right: 15px;
 }
-.nav-wrapper {
-    position: relative;
-    overflow-y: auto;
-    height: 100%;
-}
+
 
 .hamburger {
     cursor: pointer;
-    position: absolute;
+    position: relative;
     width: 40px;
     height: 60px;
     top: 60px;
     padding: 15px 0;
 /*     right: 0; */
-    z-index: 5;
+    z-index: 2;
     left: 1420px;
 }
 
