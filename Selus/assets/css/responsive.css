@@ -76,7 +76,8 @@
 
     .logo-img {
         padding-left: 20px;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
     }
 
 
