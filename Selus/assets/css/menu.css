@@ -16,7 +16,7 @@
     100% {
         -webkit-transform: scale(0.5) rotate(0deg);
                 transform: scale(0.5) rotate(0deg);
-    };
+    }
 }
 
 @keyframes logo-pulse {
@@ -34,7 +34,7 @@
     100% {
         -webkit-transform: scale(0.5) rotate(0deg);
                 transform: scale(0.5) rotate(0deg);
-    };
+    }
 }
 
  /* ----------------------------------- */
@@ -73,16 +73,21 @@
     vertical-align: middle;
     padding-right: 15px;
 }
+.nav-wrapper {
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+}
 
 .hamburger {
     cursor: pointer;
-    position: relative;
+    position: absolute;
     width: 40px;
     height: 60px;
     top: 60px;
     padding: 15px 0;
 /*     right: 0; */
-    z-index: 2;
+    z-index: 5;
     left: 1420px;
 }
 
@@ -98,12 +103,8 @@
 }
 
 /* --- Hiding default checkbox --- */
-#toggle, input[type="checkbox"] {
-    /*display: none;*/
-        height: 0;
-    position: absolute;
-    width: 0;
-    visibility: hidden;
+#toggle {
+  display: none;
 }
 
 /* ---- TOGGLING MENU BUTTON TO SHOW NAVIGATION -----*/
