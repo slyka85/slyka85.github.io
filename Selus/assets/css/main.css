@@ -1,0 +1,276 @@
+/* 
+
+COLORS USED:
+------------
+Main Background: #0a2345;
+Bullets: #335a95;
+Footer: #14396a;
+Hamburger: #2a5ea4;
+Explore: #2e66b2;
+Selus: #2a5da3;
+Graphic-designer-text: #213a61;
+Red-icons: #ff3334;
+Grey-text: #66778e;
+White-headings: #fff;
+
+ */
+
+
+
+/* ---------------------- */
+/*      INITIAL SETUP     */
+/* ---------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    height: 100%;
+    width: auto !important;
+    overflow-x: hidden !important;
+}
+
+body, .site-wrapper {
+    background: linear-gradient(#0a2142 20%, #020206 100%);
+}
+
+.site-wrapper {
+/*border: 1px solid yellow;*/
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+/* ----------- HEADER ------------*/
+
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro-text {
+    padding-top: 200px;
+}
+
+
+/* ----------- BUTTONS ------------*/
+
+a.call-to-action {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #2e66b2;
+    border-radius: 35px;
+    padding: 21px 58px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ----------- ICONS ------------*/
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon.switch {
+    margin-bottom: 50px;
+}
+
+/* ------------- HEADINGS AND PARAGRAPHS----------*/
+
+h1, h2, h3 {
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h1 span.blue-selus {
+    color: #2a5da3;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+
+
+/* ------------- SECTIONS ----------*/
+
+.main-navigation,
+.features-section,
+.download-app-section,
+header,
+footer {
+    width: 1470px;
+	  /*border: 1px solid red;*/;
+}
+
+section, footer {
+	/*border: 1px solid white;*/
+    padding: 50px 0;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.screens-section {
+    margin: 0 -9999px;
+    background: url(../images/vector-background.png) repeat-x center;
+}
+
+.screens-section img {
+    box-shadow: 0px 0px 120px 0px #051a37;
+}
+
+.screens-section img:not(.last) {
+    margin-right: 77px;
+}
+
+.headphones-section .headphones-table {
+    display: table;
+    margin: 0 auto;
+}
+
+.features-perspective-section .features-perspective-table {
+    margin: 0 auto;
+}
+
+.headphones-section .col-1,
+	.headphones-section .col-2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.headphones-section .col-1 {
+    width: 848px;
+    height: 571px;
+    margin: 0 auto;
+}
+
+.headphones-section .col-1 img {
+    width: 100%;
+}
+
+.headphones-section .col-2 {
+    padding-right: 215px;
+    padding-left: 136px;
+    max-width: 1040px;
+}
+
+.features-section {
+    padding-bottom: 200px;
+}
+
+.features-section .col-1,
+.features-section .col-3 {
+    width: 36%;
+}
+
+.features-section .col-2 {
+    position: absolute;
+    left: 330px;
+}
+
+.features-section h3 {
+    margin-bottom: 25px;
+}
+
+.features-section p {
+    margin-bottom: 75px;
+}
+
+.features-perspective-section {
+    overflow: visible;
+}
+
+.features-perspective-table {
+    max-width: 1470px;
+}
+
+.features-perspective-table .col-1 {
+    max-width: 640px;
+}
+
+.features-perspective-table .col-2 {
+    margin: -150px -253px;
+    z-index: 5;
+    position: relative;
+}
+
+.features-perspective-table .col-2 img {
+    -webkit-mask-box-image: linear-gradient(to right, black 60%, transparent 100%);
+}
+
+.opinions-section {
+    background: url(../images/opinions-background.png);
+}
+
+.opinions-section .author {
+    left: calc(50% - 250px);
+    position: relative;
+    width: auto;
+}
+
+.opinions-section .author img {
+    float: left;
+    padding-right: 20px;
+    width: 58px;
+}
+
+.opinions-section h3 {
+    line-height: 2em;
+}
+
+.download-app-section {
+    padding-top: 130px;
+}
+
+.download-app-section .download-intro {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* ------------- FOOTER ---------------*/
+
+footer:before {
+    content: '';
+    background-color: #0E1825;
+    height: 1px;
+    border: 0;
+    width: 1470px;
+    position: absolute;
+    bottom: 110px;
+}
+
+footer ul li {
+    display: inline;
+    padding-left: 20px;
+}
+
+footer .menu-links a {
+    text-decoration: none;
+    color: #14396a;
+}

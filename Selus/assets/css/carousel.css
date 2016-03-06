@@ -1,0 +1,38 @@
+.viewport {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.opinions-section .carousel-wrapper,
+.opinions-section .author,
+.opinions-section h3 {
+    margin-bottom: 75px;
+}
+
+.carousel-wrapper {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 170px 250px 0 250px;
+}
+
+/* -------  CUSTOMIZING / OVERRIDING DEFAULT SLICK CAROUSEL STYLES ---------- */
+
+.slick-dots {
+    width: 400px !important;
+    left: calc(50% - 200px) !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff !important;
+}
+
+.slick-dots li button:before {
+    font-size: 12px !important;
+    color: #66778e !important;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 36px !important;
+    color: #94A6BE !important;
+}
