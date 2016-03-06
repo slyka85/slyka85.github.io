@@ -148,18 +148,33 @@ display: none;
 }
 
 
+.features-section {
+	padding-bottom: 10px;
+}
+.features-section .col-1,
+.features-section .col-2,
+.features-section .col-3 {
+	width: 100%;
+	padding: 0 20px 0 20px;
+}
 
 
+.features-section p {
+    margin-bottom: 50px;
+}
 
+.features-perspective-section .col-2 {
+	margin: 0;
+}
 
 /*UTILITIES*/
 
 .mb200 {
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .mb110 {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 .mb50 {
