@@ -2,10 +2,25 @@
 
 @media only screen and (max-width: 480px) {
 
+	.main-navigation,
+.features-section,
+.download-app-section,
+.nav,
+header,
+footer {
+    max-width: 480px;
+    	margin: 0;
+	  /*border: 1px solid red;*/
+}
+
+
 	body {
-		font-size: 0.5em;
+/*		font-size: 0.5em;*/
 	}
 
+.hamburger {
+	left: 400px !important;
+}
 
 	.mobi-hide {
 		display: none;
