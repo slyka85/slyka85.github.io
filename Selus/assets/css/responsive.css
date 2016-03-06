@@ -2,6 +2,14 @@
 
 @media only screen and (max-width: 480px) {
 
+
+.site-wrapper {
+	    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100%;
+}
 	.main-navigation,
 	.nav-container,
 .features-section,
@@ -12,12 +20,16 @@ header,
 footer,
 body {
 	width: 100%;
-    max-width: 480px;
+/*    max-width: 480px;*/
     	margin: 0;
 	  /*border: 1px solid red;*/
 }
 
 /*NAVIGATION*/
+
+nav {
+	max-width: 480px;
+}
 nav a {
 	margin-top: 30px;
 }
@@ -55,7 +67,7 @@ h3 {
 }
 .hamburger {
 	top: 20px;
-	left: 75%;
+	left: 85%;
 }
 .logo-wrapper {
 	top: 10px;
@@ -78,10 +90,18 @@ a.call-to-action {
 }
 
 
+/*HEADER*/
+
+header {
+/*	 margin-bottom: 20px !important;*/
+}
+
 /*SECTIONS*/
 
-.screens-section {
+.screens-section,
+.features-section {
 	margin: 0 auto;
+	background-color: #051B3A;
 }
 .screens-section img {
 		float: left;
@@ -89,13 +109,68 @@ a.call-to-action {
 
 }
 .screens-section img:not(.last) {
-    margin: 0 20px 0 20px;
+    margin: 0 20px 0 30px;
   }
 
 .screens-section img:nth-of-type(2) {
 display: none;
 }
+
+.headphones-table .col-1,
+.headphones-table .col-2 {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+.headphones-table .col-1 {
+	float: left;
+	margin-bottom: 30px;
+}
+
+.headphones-table .col-2 {
+	width: 98%;
+	text-align: center;
+}
+
+.headphones-table .col-2 h1,
+.headphones-table .col-2 p {
+	float: right;
+	text-align: right;
+	}
+.headphones-table .col-2 p {
+    padding: 0 0 0 75px;
+  }
+
+.headphones-section .col-1 img {
+    width: 60%;
+}
+
+
+
+
+
+
+/*UTILITIES*/
+
 .mb200 {
 	margin-bottom: 50px;
 }
+
+.mb110 {
+	margin-bottom: 20px;
+}
+
+.mb50 {
+	margin-bottom: 25px;
+}
+
+
+.small-text {
+	line-height: 24px;
+	font-size: 12px;
+}
+/*----*/
+
 }
