@@ -4,205 +4,201 @@
 
 
 .site-wrapper {
-	    display: block;
+    display: block;
     width: 100%;
     margin: 0 auto;
     height: 100%;
     min-height: 100%;
 }
-	.main-navigation,
-	.nav-container,
-.features-section,
-.download-app-section,
-.nav,
-nav,
-header,
-footer,
-body {
-	width: 100%;
-/*    max-width: 480px;*/
-    	margin: 0;
-	  /*border: 1px solid red;*/
-}
 
-/*NAVIGATION*/
-
-nav {
-	max-width: 480px;
-}
-nav a {
-	margin-top: 30px;
-}
-
-#toggle:checked + .hamburger + .nav {
-    top: 100px;
-  }
+ .main-navigation, .nav-container, .features-section, .download-app-section, .nav, nav, header, footer, body, html {
+    width: 100%;
+    max-width: 480px !important;
+    margin: 0;
+    }
 
 
+/* --to fix blank space on the right --*/
+    html {
+        overflow-x: hidden;
+    }
 
-.main-navigation {
-	position: relative;
-}
+ /* ----- NAVIGATION ------*/
 
-.main-navigation img {
-	width: 60px;
-}
+    nav {
+        max-width: 480px;
+    }
 
-h1 {
-    font-size: 30px;
-}
+    nav a {
+        margin-top: 30px;
+    }
 
-h2, nav a {
-	font-size: 24px;
-}
+    .nav {
+        height: 350px;
+    }
 
-h3 {
-		font-size: 16px;
- }
+    #toggle:checked + .hamburger + .nav {
+        top: 100px;
+    }
 
+    .main-navigation {
+        position: relative;
+    }
 
+    .main-navigation img {
+        width: 60px;
+    }
 
-.intro-text {
-	padding-top: 100px;
-}
-.hamburger {
-	top: 20px;
-	left: 85%;
-}
-.logo-wrapper {
-	top: 10px;
-}
+    h1 {
+        font-size: 30px;
+    }
 
-	.mobi-hide {
-		display: none;
-	}
+    h2, nav a {
+        font-size: 24px;
+    }
 
-.logo-img {
-		padding-left: 20px;
-    animation: none;
-}
+    h3 {
+        font-size: 16px;
+    }
 
+    .intro-text {
+        padding-top: 100px;
+    }
 
-/*BUTTONS*/
-a.call-to-action {
-    padding: 15px 55px;
+    .hamburger {
+        top: 20px;
+        left: 85%;
+    }
 
-}
+    .logo-wrapper {
+        top: 10px;
+    }
 
-
-/*HEADER*/
-
-header {
-/*	 margin-bottom: 20px !important;*/
-}
-
-/*SECTIONS*/
-
-.screens-section,
-.features-section {
-	margin: 0 auto;
-	background-color: #051B3A;
-}
-.screens-section img {
-		float: left;
-	    width: 40%;
-
-}
-.screens-section img:not(.last) {
-    margin: 0 20px 0 30px;
-  }
-
-.screens-section img:nth-of-type(2) {
-display: none;
-}
-
-.headphones-table .col-1,
-.headphones-table .col-2 {
-	display: block;
-	width: 100%;
-	height: auto;
-	padding: 0;
-}
-
-.headphones-table .col-1 {
-	float: left;
-	margin-bottom: 30px;
-}
-
-.headphones-table .col-2 {
-	width: 98%;
-	text-align: center;
-}
-
-.headphones-table .col-2 h1,
-.headphones-table .col-2 p {
-	float: right;
-	text-align: right;
-	}
-.headphones-table .col-2 p {
-    padding: 0 0 0 75px;
-  }
-
-.headphones-section .col-1 img {
-    width: 60%;
-}
+    .logo-img {
+        padding-left: 20px;
+        animation: none;
+    }
 
 
-.features-section {
-	padding-bottom: 10px;
-}
-.features-section .col-1,
-.features-section .col-2,
-.features-section .col-3 {
-	width: 100%;
-}
+/* ------ BUTTONS -------- */
+
+    a.call-to-action {
+        padding: 15px 55px;
+    }
 
 
-.features-section p {
-    margin-bottom: 50px;
-}
+/* ------ SECTIONS ---------*/
 
-.features-perspective-section,
-.download-app-section {
-	padding-top: 0;
-}
-.features-perspective-section .col-2 {
-	margin: 0;
-}
+    .screens-section,
+    .features-section {
+        margin: 0 auto;
+        background-color: #051B3A;
+    }
 
-.features-perspective-section .col-2 img {
-	width: 100%;
-}
+    .screens-section img {
+        float: left;
+        width: 40%;
+    }
+
+    .screens-section img:not(.last) {
+        margin: 0 20px 0 30px;
+    }
+
+    .screens-section img:nth-of-type(2) {
+        display: none;
+    }
+
+    .headphones-table .col-1,
+    .headphones-table .col-2 {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .headphones-table .col-1 {
+        float: left;
+        margin-bottom: 30px;
+    }
+
+    .headphones-table .col-2 {
+        width: 98%;
+        text-align: center;
+    }
+
+    .headphones-table .col-2 h1,
+    .headphones-table .col-2 p {
+        float: right;
+        text-align: right;
+    }
+
+    .headphones-table .col-2 p {
+        padding: 0 0 0 75px;
+    }
+
+    .headphones-section .col-1 img {
+        width: 60%;
+    }
+
+    .features-section {
+        padding-bottom: 10px;
+    }
+
+    .features-section .col-1,
+    .features-section .col-2,
+    .features-section .col-3 {
+        width: 100%;
+    }
+
+    .features-section p {
+        margin-bottom: 50px;
+    }
+
+    .features-perspective-section,
+    .download-app-section {
+        padding-top: 0;
+    }
+
+    .features-perspective-section .col-2 {
+        margin: 0;
+    }
+
+    .features-perspective-section .col-2 img {
+        width: 100%;
+    }
+
+    .download-app-section,
+    .features-section {
+        padding: 0 20px 0 20px;
+    }
+
+    footer .col-2 {
+        text-align: center;
+        float: none;
+    }
 
 
-.download-app-section,
-.features-section {
-	    padding: 0 20px 0 20px;
-}
-footer .col-2 {
-	text-align: center;
-	float: none;
-}
-
-/*UTILITIES*/
-
-.mb200 {
-	margin-bottom: 100px;
-}
-
-.mb110 {
-	margin-bottom: 50px;
-}
-
-.mb50 {
-	margin-bottom: 25px;
-}
+   /* ------ UTILITIES ------- */
 
 
-.small-text {
-	line-height: 24px;
-	font-size: 12px;
-}
-/*----*/
+    .mobi-hide {
+        display: none;
+    }
 
+    .mb200 {
+        margin-bottom: 100px;
+    }
+
+    .mb110 {
+        margin-bottom: 50px;
+    }
+
+    .mb50 {
+        margin-bottom: 25px;
+    }
+
+    .small-text {
+        line-height: 24px;
+        font-size: 12px;
+    }
 }
