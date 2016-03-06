@@ -155,7 +155,6 @@ display: none;
 .features-section .col-2,
 .features-section .col-3 {
 	width: 100%;
-	padding: 0 20px 0 20px;
 }
 
 
@@ -163,8 +162,26 @@ display: none;
     margin-bottom: 50px;
 }
 
+.features-perspective-section,
+.download-app-section {
+	padding-top: 0;
+}
 .features-perspective-section .col-2 {
 	margin: 0;
+}
+
+.features-perspective-section .col-2 img {
+	width: 100%;
+}
+
+
+.download-app-section,
+.features-section {
+	    padding: 0 20px 0 20px;
+}
+footer .col-2 {
+	text-align: center;
+	float: none;
 }
 
 /*UTILITIES*/
