@@ -16,7 +16,7 @@
     100% {
         -webkit-transform: scale(0.5) rotate(0deg);
                 transform: scale(0.5) rotate(0deg);
-    };
+    }
 }
 
 @keyframes logo-pulse {
@@ -34,7 +34,7 @@
     100% {
         -webkit-transform: scale(0.5) rotate(0deg);
                 transform: scale(0.5) rotate(0deg);
-    };
+    }
 }
 
  /* ----------------------------------- */
