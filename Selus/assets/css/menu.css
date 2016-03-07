@@ -74,7 +74,9 @@
     padding-right: 15px;
 }
 
-
+.logo-txt {
+    font-size: 2rem;
+}
 .hamburger {
     cursor: pointer;
     position: relative;
@@ -175,7 +177,7 @@ nav a {
     opacity: 0;
     filter: alpha(opacity=0);
     text-decoration: none;
-    font-size: 48px;
+    font-size: 4rem;
     letter-spacing: 2px;
     -webkit-transition: all 0.1s ease-in-out;
             transition: all 0.1s ease-in-out;

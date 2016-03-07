@@ -3,7 +3,7 @@
 
 .grey-text {
     color: #66778e;
-    line-height: 36px;
+    line-height: 2rem;
 }
 
 .white-text {
@@ -19,7 +19,7 @@
 /* --------------- REUSABLE TEXT PROPERTIES --------------*/
 
 .small-text {
-    font-size: 14px;
+    font-size: 1.2rem;
 }
 
 .font-regular {

@@ -20,6 +20,10 @@ White-headings: #fff;
 /* ---------------------- */
 /*      INITIAL SETUP     */
 /* ---------------------- */
+html {
+    font-size: 12px;
+}
+
 
 * {
     margin: 0;
@@ -73,7 +77,6 @@ header {
 a.call-to-action {
     display: inline-block;
     text-decoration: none;
-    font-size: 14px;
     background-color: transparent;
     color: #fff;
     border: 2px solid #2e66b2;
@@ -106,7 +109,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 4rem;
 }
 
 h1 span.blue-selus {
@@ -114,15 +117,16 @@ h1 span.blue-selus {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 2rem;
 }
 
-.small-text {
-    font-size: 14px;
+.small-text,
+a.call-to-action {
+    font-size: 1.2rem;
 }
 
 
