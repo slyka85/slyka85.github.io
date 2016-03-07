@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 480px) {
 
+html {
+    font-size: 0.5rem;    
+}
+
 
 .site-wrapper {
     display: block;
@@ -47,18 +51,6 @@
 
     .main-navigation img {
         width: 60px;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2, nav a {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.3rem;
     }
 
     .intro-text {
@@ -108,6 +100,9 @@
         display: none;
     }
 
+    .headphones-section {
+        padding-bottom: 10px;
+    }
     .headphones-table .col-1,
     .headphones-table .col-2 {
         display: block;
@@ -172,6 +167,10 @@
     .features-section {
         padding: 0 20px 0 20px;
     }
+
+    .download-app-section img {
+        width: 60%;
+    }
     .features-section {
            padding-top: 50px;
     }
@@ -202,7 +201,6 @@
     }
 
     .small-text {
-        line-height: 2rem;
-        font-size: 1rem;
+        line-height: 2rem;  
     }
 }
