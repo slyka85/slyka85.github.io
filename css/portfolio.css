@@ -48,6 +48,7 @@ margin: 0px 0px 70px;
 
 .portfolio-item img {
 width: 100%;
+height: 202px;
 
 }
 .portfolio-item:nth-child(1) { transform: rotate(-7deg);}
