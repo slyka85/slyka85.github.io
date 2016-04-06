@@ -18,6 +18,7 @@ if (mql.matches){ // if media query matches
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
 }
 
 
