@@ -1,5 +1,5 @@
 {
-  "modal-preview-row1": [
+  "modal-preview": [
     {
     "modal-href":"#portfolioModal1",
     "modal-image":"pack-app.jpg",
@@ -17,9 +17,7 @@
     "modal-image":"teach-me-how-to-cook.jpg",
     "modal-heading":"Teach Me How To Cook",
     "modal-text":"Ruby On Rails, JavaScript, HTML/CSS"
-    }
- ],
-  "modal-preview-row2": [
+    },
     {
     "modal-href":"#portfolioModal4",
     "modal-image":"dating-app.jpg",
@@ -37,9 +35,7 @@
     "modal-image":"trekabilly-app.jpg",
     "modal-heading":"Trekabilly",
     "modal-text":"Ruby On Rails, JavaScript, HTML/CSS"
-    }
-  ],
-  "modal-preview-row3": [
+    },
     {
     "modal-href":"#portfolioModal7",
     "modal-image":"job-tracker-2.jpg",
