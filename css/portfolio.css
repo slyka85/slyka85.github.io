@@ -51,9 +51,9 @@ width: 100%;
 height: 202px;
 
 }
-.portfolio-item:nth-child(1) { transform: rotate(-7deg);}
+.portfolio-item:nth-child(3n+1) { transform: rotate(-7deg);}
 
-.portfolio-item:nth-child(3) {  transform: rotate(7deg);}
+.portfolio-item:nth-child(3n+3) {  transform: rotate(7deg);}
 
 .portfolio-item:nth-child(odd):after {
     position: absolute;

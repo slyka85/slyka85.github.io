@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Anya Melnyk Portfolio</title>
+    <title>Anya Melnyk</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,8 +48,8 @@
 
 </head>
 
-<body id="page-top" class="index">
 
+<body id="page-top" class="index">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -233,7 +233,7 @@
             </div>
 
 
-            <div class="modals-preview"> </div>
+            <div class="modals-preview-target"> </div>
              <script type="text/template" id="modal-preview-template">
 
                   <!----------------- MODAL PREVIEWS ------------------>
@@ -255,13 +255,15 @@
                 </div>
                 {{/modal-preview}}
                 </div>
+                  <!-------------------------------------------------->
 
             </script>
+
 
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Career Path Section -->
     <section id="about">
         <div class="container">
             <div class="row">
@@ -274,94 +276,31 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/perscholas.jpeg" alt="">
-                            </div>
-                            <div class="timeline-panel fly show-block">
-                                <div class="timeline-heading">
-                                    <h4>October - December 2014</h4>
-                                    <h4 class="subheading">Software Testing Education Program at Per Scholas</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Graduated from the Software Testing Education Program (STEP) at Per Scholas that included a 9-week training on Rapid Testing Intensive (RTI) and Rapid Software Testing (RST) created by James Bach of Satisfice. Part of the training included working on projects within small teams to test a flash-based game, mind-mapping application and others that required the need to write formal bug reports, prepared outlines of risks and areas to test, as well as a final report.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/eko.gif" alt="">
-                            </div>
-                            <div class="timeline-panel fly show-block">
-                                <div class="timeline-heading">
-                                    <h4>January - March 2015</h4>
-                                    <h4 class="subheading">Software QA Engineer Intern at EKO Communications</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Performed manual testing of mobile applications on Android and iOS devices <br>
-                        • Tested a web-based application    <br> 
-                        • Identified potential risks and created a risk analysis report <br>
-                        • Created Product Coverage Outline using mind maps  <br>
-                        • Wrote and executed test cases for regression testing of new builds of an application  <br>
-                        • Evaluated quality of a product on different stages of its development <br>
-                        • Created comprehensive database of documented test defects and procedures to enable accurate replication and ensure compliance with standards</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/ga.png" alt="">
-                            </div>
-                            <div class="timeline-panel fly show-block">
-                                <div class="timeline-heading">
-                                    <h4>March - July 2015</h4>
-                                    <h4 class="subheading"> Web Development Immersive Bootcamp at General Assembly</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">During a 3-month course, I Built a Wiki App using Node.js, Express.js, SQLite3 <br>
-                        •   Created a Contacts Manager app using JavaScript, Semantic-UI, Mustache.js, jQuery, JSON-Server. <br>
-                        •   Developed a Travel planning app using Ruby on Rails, JavaScript, jQuery, Bootstrap and PostgreSQL <br>
-                        •   Built a Meetup Events scheduling application with a small group, using Backbone.js and Ruby on Rails
-                        </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/devshop.png" alt="">
-                            </div>
-                            <div class="timeline-panel fly show-block">
-                                <div class="timeline-heading">
-                                    <h4>July 2015 - November 2015</h4>
-                                    <h4 class="subheading">Back End Web Developer at NYC Devshop</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Developed an MVP of a large scale Ruby on Rails application <br>
-•  Integrated user-facing elements developed by front-end developers with server logic <br>
-•  Integrated 15+ social media & financial/accounting APIs into the app to perform calculations needed for the project‘s logic • Performed testing of the application features. Fixed application bugs <br>
-•  Maintained code quality and organization</p>
-                                </div>
-                            </div>
-                        </li>
+                     <div class="career-path-target"></div>
+                 <script type="text/template" id="career-path-template">
+
+                  <!----------------- CAREER PATH ------------------>
+                        {{#career-path}}
                         <li class="timeline">
                             <div class="timeline-image">
-                              <img class="img-circle img-responsive" src="img/about/onewire.png" alt="" style=" top: 17px; position: relative;">
+                              <img class="img-circle img-responsive" src="img/about/{{career-image}}" alt="{{career-subheading}}">
                             </div>
                             <div class="timeline-panel fly show-block">
                                 <div class="timeline-heading">
-                                    <h4>January 2016 - Present</h4>
-                                    <h4 class="subheading"> Front-End Developer Intern at OneWire</h4>
+                                    <h4>{{career-date}}</h4>
+                                    <h4 class="subheading">{{career-subheading}}</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted"> Currently working on <br>
-                                     • Developing Front-End for the main site using HTML/LESS/JavaScript. <br> •  Creating HTML Emails. <br> • Running Unit Tests. <br>
-
-Environment: ASP.Net, C#, MySQL, HTML, CSS/Less, JavaScript, Visual Studio, Source Control
-                     
-                        </p>
+                                    <p class="text-muted">{{career-text}}</p>
                                 </div>
                             </div>
                         </li>
+                        {{/career-path}}
+
+                        </script>
+
+
+
                           <li class="timeline">
                             <div class="timeline-image hvr-bounce-in">
                               <a href="mailto:anya.melnyk.nyc@gmail.com?Subject=We%20want%20to%20hire%20you,%20Anya" target="_top"> <img class="img-circle img-responsive" src="img/about/hire-me.png"></a>
@@ -936,12 +875,20 @@ Environment: ASP.Net, C#, MySQL, HTML, CSS/Less, JavaScript, Visual Studio, Sour
 
 <script type="text/javascript">
     $(document).ready(function() {
+        $('ul.timeline li:even').addClass('timeline-inverted');
 
     $.getJSON('http://slyka85.github.io/js/modals-json.json', function(data) {
         var template = $("#modal-preview-template").html();
         var html = Mustache.to_html(template, data);
-        $('.modals-preview').html(html);
+        $('.modals-preview-target').html(html);
     });
+
+    $.getJSON('http://slyka85.github.io/js/modals-json.json', function(data) {
+        var template = $("#career-path-template").html();
+        var html = Mustache.to_html(template, data);
+        $('.career-path-target').html(html);
+    });
+
 
 });
 </script>
