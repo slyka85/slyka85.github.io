@@ -2,7 +2,7 @@
   "modal-preview": [
     {
     "modal-href":"#portfolioModal1",
-    "modal-image":"pack-app.jpg",
+    "modal-image":"pack-app.png",
     "modal-heading":"PackNRoll",
     "modal-text":"Ruby On Rails, JavaScript, HTML/CSS"
     },
