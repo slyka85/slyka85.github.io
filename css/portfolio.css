@@ -15,25 +15,34 @@ background: url(../img/grey-background.jpg);
 	color: #F2BCE4;
 }*/
 
+.portfolio-caption {
+  transition: all 0.5s ease-in-out;
+}
+
 .portfolio-caption:before,
 .portfolio-caption:after {
   z-index: -1;
   position: absolute;
   left: 22px;
   bottom: 12px;
-  width: 40%;
-  height: 10px;
+  width: 50%;
+  height: 24px;
   background: transparent;
   content: '';
   transform-origin: left bottom;
   transform: skew(-3deg) rotate(-3deg);
-  box-shadow: 0 14px 14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 14px 14px grey;
 }
 .portfolio-caption:after {
-  left: auto;
-  right: 22px;
-  transform-origin: right bottom;
-  transform: skew(3deg) rotate(3deg);
+    left: auto;
+    right: 19px;
+    transform-origin: right bottom;
+    transform: skew(3deg) rotate(2deg);
+    background: #A1A1A2;
+}
+
+.portfolio-item:nth-child(3n+2):hover .portfolio-caption{
+   border-bottom-right-radius: 260px 20px;
 }
 
 .portfolio-item {
@@ -52,8 +61,12 @@ height: 202px;
 
 }
 .portfolio-item:nth-child(3n+1) { transform: rotate(-7deg);}
+.portfolio-item:nth-child(3n+1):hover { transform: rotate(0deg);}
+
 
 .portfolio-item:nth-child(3n+3) {  transform: rotate(7deg);}
+.portfolio-item:nth-child(3n+3):hover {  transform: rotate(0deg);}
+
 
 .portfolio-item:nth-child(odd):after {
     position: absolute;
