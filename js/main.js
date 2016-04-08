@@ -72,7 +72,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 
         $("#typed2").typed({
-              strings: ["making cool stuff.^100", "to code. <br> ^200 <br>IT IS NICE TO HAVE YOU HERE ^600 :)"],
+              strings: ["making cool stuff.^100", "to code. <br> ^200 <br>Welcome! ^600 :)"],
               backDelay: 300,    
               typeSpeed: 90,
               backSpeed: 50,
