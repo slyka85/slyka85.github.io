@@ -112,7 +112,8 @@
 
 
 
-    <!-- Skills Section -->
+               <!-------------------- Skills Section -------------------->
+
     <section id="skills">
         <div class="container">
             <div class="row">
@@ -123,84 +124,26 @@
                     <h3 class="section-subheading text-muted fly show-block">Web Development skills</h3>
                 </div>
             </div>
+
+            <div class="skills-target"> </div>
+             <script type="text/template" id="skills-template">
             <div class="row text-center">
-
-
-
-                <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x">
-                    <i class="devicon-rails-plain colored"></i>
-                     
+                {{#skills}}
+              <div class="col-md-4 fly show-block">
+                 <span class="fa-stack fa-4x">
+                    <i class="{{skill-icon}}" style="{{skill-style}}"></i>
+                   <i class="{{skill-icon1}}"></i>
                     </span>
-                    <h4 class="service-heading">Ruby On Rails</h4>
-                    <p class="text-muted">Open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python.</p>
+                    <h4 class="skill-heading">{{skill-heading}}</h4>
+                    <p class="text-muted">{{skill-text}}</p>
                 </div>
-
-
-                <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x">
-                      <i class="devicon-javascript-plain colored"></i>
-                    </span>
-                    <h4 class="service-heading">JavaScript</h4>
-                    <p class="text-muted">Object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
-                </div>
-                 <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x">
-                    <i class="devicon-jquery-plain colored"></i>
-                    </span>
-                    <h4 class="service-heading">jQuery</h4>
-                    <p class="text-muted">Fast, small, and feature-rich JavaScript library designed to simplify the client-side scripting of HTML. </p>
-                </div>
-                <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x" style="display: inline;">
-                   <i class="devicon-html5-plain colored"></i> +
-                   <i class="devicon-css3-plain colored"></i>
-                    </span>
-                    <h4 class="service-heading">HTML5 / CSS3</h4>
-                    <p class="text-muted">HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices.</p>
-                </div>
-
-                 <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x">
-                 <i class="devicon-sass-original colored"></i>
-                    </span>
-                    <h4 class="service-heading">SASS</h4>
-                    <p class="text-muted">Scripting language that is interpreted into Cascading Style Sheets (CSS). SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called "the indented syntax", uses a syntax similar to Haml.</p>
-                </div>
-                                 <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x">
-                   <i class="devicon-bootstrap-plain colored"></i>
-                    </span>
-                    <h4 class="service-heading">Bootstrap</h4>
-                    <p class="text-muted">Open-source collection of tools for creating websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p>
-                </div>
-                                    <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x">
-                  <i class="devicon-nodejs-plain-wordmark colored" style="padding: 9px;
-    border: 2px solid;"></i>
-                    </span>
-                    <h4 class="service-heading">Node.js / Express.js</h4>
-                    <p class="text-muted">Node.js is an open-source, cross-platform runtime environment for developing server-side web applications. Express.js is the most popular Node.js web application framework used today.</p>
-                </div>
-
-                 <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x">
-                   <i class="devicon-mysql-plain colored"></i>
-                    </span>
-                    <h4 class="service-heading">MySQL</h4>
-                    <p class="text-muted">Open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). It is most noted for its quick processing, proven reliability, ease and flexibility of use.</p>
-                </div>
-                    <div class="col-md-4 fly show-block">
-                    <span class="fa-stack fa-4x">
-                    <i class="devicon-postgresql-plain colored"></i>
-                    </span>
-                    <h4 class="service-heading">PostgreSQL</h4>
-                    <p class="text-muted">Open source relational database management system ( DBMS ) developed by a worldwide team of volunteers. It has earned a strong reputation for reliability, data integrity, and correctness</p>
-                </div>
-
+                {{/skills}}
             </div>
+            </script>
+
         </div>
     </section>
+               <!------------------------------------------------------->
 
 
 
@@ -849,9 +792,14 @@
         var modalTemplate = $("#modal-preview-template").html();
         var modalHtml = Mustache.to_html(modalTemplate, data);
         $('.modals-preview-target').html(modalHtml);
+
         var careerTemplate = $("#career-path-template").html();
         var careerHtml = Mustache.to_html(careerTemplate, data);
         $('.career-path-target').html(careerHtml);
+
+        var skillsTemplate = $("#skills-template").html();
+        var skillsHtml = Mustache.to_html(skillsTemplate, data);
+        $('.skills-target').html(skillsHtml);
     });
 
 
