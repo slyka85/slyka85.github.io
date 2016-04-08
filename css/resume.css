@@ -42,10 +42,13 @@ opacity: 1;*/
 }
 
 
-.sprite { background: url('../img/about/sprite.png') no-repeat top left; width: 200px; height: 200px;  } 
+.sprite { 
+	background: white url('../img/about/sprite.png') no-repeat top left; 
+	width: 156px; height: 156px;
+	border-radius: 50%; } 
 .sprite.perscholas { background-position: 0 0; } 
-.sprite.eko { background-position: 0 -210px; } 
-.sprite.ga { background-position: 0 -420px; } 
-.sprite.devshop { background-position: 0 -630px; } 
-.sprite.onewire { background-position: 0 -840px; } 
-.sprite.hire-me { background-position: 0 -1050px; } 
+.sprite.eko { background-position: 0 -166px; } 
+.sprite.ga { background-position: 0 -332px; } 
+.sprite.devshop { background-position: 0 -498px; } 
+.sprite.onewire { background-position: 0 -664px; } 
+.sprite.hire-me { background-position: 0 -830px; } 
