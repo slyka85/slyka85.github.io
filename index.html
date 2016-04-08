@@ -13,28 +13,21 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
-
     <!-- Hover CSS-->
     <link href="css/hover.css" rel="stylesheet">
-
     <!-- Animate CSS-->
     <link href="css/animate.css" rel="stylesheet">
-
     <!-- Fly Scroll CSS-->
     <link href="css/fly.css" rel="stylesheet">
-
-        <!-- Caption Hover1 CSS-->
+     <!-- Caption Hover1 CSS-->
     <link href="css/caption-hover1.css" rel="stylesheet">
-         <!-- Caption Hover2 CSS-->
+    <!-- Caption Hover2 CSS-->
     <link href="css/caption-hover2.css" rel="stylesheet">
-
-             <!-- Portfolio Section CSS-->
+     <!-- Portfolio Section CSS-->
     <link href="css/portfolio.css" rel="stylesheet">
-
-                 <!-- Resume Section CSS-->
+    <!-- Resume Section CSS-->
     <link href="css/resume.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
@@ -45,8 +38,6 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
-
-
 
 </head>
 
@@ -129,7 +120,7 @@
              <script type="text/template" id="skills-template">
             <div class="row text-center">
                 {{#skills}}
-              <div class="col-md-4 fly show-block">
+              <div class="col-md-4 col-sm-6 fly show-block">
                  <span class="fa-stack fa-4x">
                     <i class="{{skill-icon}}" style="{{skill-style}}"></i>
                    <i class="{{skill-icon1}}"></i>
@@ -144,7 +135,6 @@
         </div>
     </section>
                <!------------------------------------------------------->
-
 
 
 
@@ -187,8 +177,6 @@
                   <!-------------------------------------------------->
 
             </script>
-
-
         </div>
     </section>
 
@@ -232,8 +220,7 @@
                             </div>
                         </li>
                    <!-------------------------------------------------->
-                        </script>
-
+                   </script>
                 </div>
             </div>
         </div>
@@ -267,10 +254,6 @@
                                     <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." name="_replyto">
                                     <p class="help-block text-danger"></p>
                                 </div>
-<!--                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                    <p class="help-block text-danger"></p>
-                                </div> -->
                             </div>
                             <div class="col-md-6 fly show-block">
                                 <div class="form-group">
@@ -320,16 +303,11 @@
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
+                                    <!-- Portfolio Modal Details -->
+                 <div class="modal-details-target"></div>     
+                 <script type="text/template" id="modal-details-template">
 
-
-
-
-
-                                    <!-- Portfolio Modal 1 PACK'n'ROLL -->
-
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="{{modal-id}}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -342,51 +320,24 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Pack'n'Roll</h2>
-                            <p class="item-intro text-muted">Pack'N'Roll is an application to help users plan and pack for upcoming trips.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/pack-inside1.png" alt="">
-                            <img class="img-responsive img-centered" src="img/portfolio/pack-inside2.png" alt="">
-                            <ul style='list-style-type: none'> <strong>Pack'n'Roll was built using:</strong> 
-                                <li><i>Ruby On Rails</i></li>
-                                <li><i>JavaScript</i></li>
-                                <li><i>jQuery</i></li>
-                                <li><i>HTML/CSS</i></li>
-                                <li><i>PostgreSQL</i></li>
-                            </ul>
-                             <ul style='list-style-type: none'> <strong>10 API integrated:</strong>
-                                <li><i>Exchange Rates API</i></li>
-                                <li><i>Autocomplete City API </i></li>
-                                <li><i>Google Maps API </i></li>
-                                <li><i> TimeZoneDB API </i></li>
-                                <li><i>Weather Underground API </i></li>
-                                <li><i>IP Address Geolocation API </i></li>
-                                <li><i> Facebook Oauth API </i></li>
-                                <li><i>Google Oauth API </i></li>
-                                <li><i>Linkedin Oauth API </i></li>
-                                <li><i>Github Oauth API </i></li>
-                            </ul>
-                            <br>
-                            <hr>
+                            <h2>{{modal-header}}</h2>
+                            <p class="item-intro text-muted">{{modal-intro}}</p>
 
-                        <a href="https://github.com/slyka85/Pack-n-Roll" target='_blank'><button type="button" class="btn btn-primary">SEE CODE</button></a>
+                            <a href="{{img-link1}}"><img class="img-responsive img-centered" src="img/portfolio/{{modal-img1}}" alt="{{modal-header}}"></a>
+                            <a href="{{img-link2}}"><img class="img-responsive img-centered" src="img/portfolio/{{modal-img2}}" alt="{{modal-header}}"></a>
+                            <a href="{{img-link3}}"><img class="img-responsive img-centered" src="img/portfolio/{{modal-img3}}" alt="{{modal-header}}"></a>
+
+                            <ul style='list-style-type: none'> <strong>The App was built using:</strong> 
+                            <em>{{{modal-stack-list}}}</em>   
+                            </ul>
+                            <br> <hr>
+
+                        <a href="{{code-link}}" target='_blank'><button type="button" class="btn btn-primary">SEE CODE</button></a>
                            or
-
-                             <a href="https://pack-n-roll.herokuapp.com" target='_blank'><button type="button" class="btn btn-primary">LIVE PREVIEW</button></a>
+                         <a href="{{app-link}}" target='_blank'><button type="button" class="btn btn-primary">LIVE PREVIEW</button></a>
                                  <hr> 
                             <h6>Application Features:</h6>
-                          
-                    <p>User can create a personal account (sign up / log in) and edit his/her profile settings.
-                    </p>
-                    <p>
-                    User can create a Trip by adding a destination name, start date and end date of the planned trip and choose the activities planned. </p>
-                    <p>
-                    Once the trip is created, user can check current weather for the destination location as well as see the distance between 2 locations on the map.
-                    </p>
-                    The trip can be updated or deleted. On the trip page, a user is provided with the list of suggested items to pack (by category).
-                    Custom items can be added on the same page. User can mark items as packed and save or print current progress.
-                    User has access to a Calendar with all the planned trips to easily find and track past of future travel. </p>
-                    <p>User can check the currency of a searched country and the currency calculator is available. Time difference between his/her current location and the destination is displayed on the world map.</p>
-
+                        {{{app-features}}}
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Portfolio</button>
                         </div>
                     </div>
@@ -394,368 +345,7 @@
             </div>
         </div>
     </div>
-
-
-
-                             <!-- Portfolio Modal 8 PURE CSS PROJECTS -->
-
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Projects built with CSS3</h2>
-                            <p class="item-intro text-muted">This collection includes my latest hobby - animations that do not use any JavaScript / jQuery. CSS3 is powerful enough on its own to create amazing effects.</p>
-                            <a href="http://slyka85.github.io/ccs-projects/CSS-clock.html"><img class="img-responsive img-centered" src="ccs-projects/gifs/css-room-animation.gif" alt=""></a>
-                            <a href="http://slyka85.github.io/ccs-projects/CSS-car.html"><img class="img-responsive img-centered" src="ccs-projects/gifs/css-car-animation.gif" alt=""></a>
-                            <a href="http://slyka85.github.io/ccs-projects/CSS-fish.html"><img class="img-responsive img-centered" src="ccs-projects/gifs/css-fish-animation.gif" alt=""></a>
-                           
-                            <br>
-                            <hr>
-
-
-
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Portfolio</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-                             <!-- Portfolio Modal 3 TEACH-ME-HOW-TO-COOK  -->
-
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Teach Me How To Cook</h2>
-                            <p class="item-intro text-muted">This Appllication allows my Facebook friends to share their culinary skills with me by posting their recipes and teaching me how to cook :)</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/teach-me-how-to-cook.png" alt="">
-                            <img class="img-responsive img-centered" src="img/portfolio/teach-me-how-to-cook-1.png" alt="">
-                            <img class="img-responsive img-centered" src="img/portfolio/teach-me-how-to-cook-2.png" alt="">
-                            <ul style='list-style-type: none'> <strong>Teach-Me-How-To-Cook was built using:</strong> 
-                            <br><br>
-                                <li><i>Ruby On Rails</i></li>
-                                <li><i>JavaScript</i></li>
-                                <li><i>jQuery</i></li>
-                                <li><i>HTML/CSS</i></li>
-                                <li><i>SQLite3 / PostgreSQL</i></li>
-                            </ul>
-                            <br>
-                            <hr>
-
-                        <a href="https://github.com/slyka85/Teach-Me-How-To-Cook" target='_blank'><button type="button" class="btn btn-primary">SEE CODE</button></a>
-                           or
-                        <a href="https://teach-me-how-to-cook.herokuapp.com" target='_blank'><button type="button" class="btn btn-primary">LIVE PREVIEW</button></a>
-
-                            <hr> 
-                            <h6>Application Features:</h6>
-                          
-                    <p>User can create a personal account (sign up / log in) and edit his/her profile settings.
-                    </p>
-                    <p>Create a Recipe by uploading images and adding Ingredients and Directions</p>
-                    <p>User can send a message notifying me that the Recipe is ready</p>
-
-
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Portfolio</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-                             <!-- Portfolio Modal 4 Dating App -->
-
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Dating App</h2>
-
-                            <p class="item-intro text-muted"><a href="http://192.241.166.229" target='_blank'>DatingApp</a> is an application similar to Tinder, where users can like or dislike each other and be matched on mutual ineterests.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/datingApp-inside1.png" alt="">
-                            <img class="img-responsive img-centered" src="img/portfolio/datingApp-inside2.png" alt="">
-  
-                            <ul style='list-style-type: none'> <strong>A Single Page App built using:</strong> 
-                                <li><i>Ruby On Rails</i></li>
-                                <li><i>JavaScript</i></li>
-                                <li><i>jQuery</i></li>
-                                <li><i>HTML/CSS</i></li>
-                                <li><i>SQLite3</i></li>
-                                <li><i>Deployed to Digital Ocean using Apache and Passenger web servers and Capistrano Gem</i></li>
-
-                            </ul>
-                            <hr>
-
-                       <a href="https://github.com/slyka85/datingApp" target='_blank'><button type="button" class="btn btn-primary">SEE CODE</button></a>
-                           or
-                        <a href="http://192.241.166.229" target='_blank'><button type="button" class="btn btn-primary">LIVE PREVIEW</button></a>
-
-                            <hr>
-                            <h6>Application Features:</h6>
-                            <p><b>Registration. </b>A user can easily create a profile with 1-click sign-up through Facebook.
-                            </p> 
-                            <p><b>Match. </b> If both users like each other, the "Friendship" will be initiated, a user will get an alert
-                            </p> 
-                            <p><b>Get in contact. </b> Once user is matched with another user, the email contact becomes available.
-                            </p> 
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Portfolio</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-                                 <!-- Portfolio Modal 5 IMPROPMTU-->
-
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Imprompt2</h2>
-                            <p class="item-intro text-muted"><a href="https://ancient-ravine-4640.herokuapp.com" target='_blank'>Impromptu</a> is all about spontenaity for the users, who have a couple hours and want to find something of interest.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/impromptu-inside1.png" alt="">
-                            <img class="img-responsive img-centered" src="img/portfolio/impromptu-inside2.png" alt="">
-                            <p>Impromptu has been created in collaboration with 4 students at General Aseembly Web Development Bootcamp as one of the assignments.</p>
-                            <ul style='list-style-type: none'> <strong>A Single Page App built using:</strong> 
-                                <li><i>Backbone.js</i></li>
-                                <li><i>Ruby On Rails</i></li>
-                                <li><i>JavaScript</i></li>
-                                <li><i>jQuery</i></li>
-                                <li><i>Moment.js</i></li>
-                                <li><i>HTML/CSS</i></li>
-                                <li><i>PostgreSQL</i></li>
-                            </ul>
-                            <hr>
-
-                        <a href="https://github.com/Impromp2/Impromp2" target='_blank'><button type="button" class="btn btn-primary">SEE CODE</button></a>
-                           or
-                        <a href="https://impromp2-meetup.herokuapp.com/" target='_blank'><button type="button" class="btn btn-primary">LIVE PREVIEW</button></a>
-
-                            <hr>
-
-                            <h6>Application Features:</h6>
-                            <p><b>Finding an event. </b>A user has the ability to see all events that match their interests but ONLY during times that they are available. This is done by having the user create time slots when they are "normally free" on each day of the week. This schedule is then duplicated every week. Imromptu gives that specific user events at the beginning of each week. A user can also do custome searches if they suddenly find themselves having some available time during the week, eliminating the need for the user to go in and change their settings.</p>
-                            <p><b>Hosting an event. </b> Since every user has their "normally free" times included in their profiles, someone who is looking to host an event can see when users (who will remain anonymous), that are interested in their topic, are free. These statistics allow the host to create their event at the most optimal time for the potential guests in the area. The host can also send out an email to all anonymous users as well, informing them of the event and why they should go.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Portfolio</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-                                       <!-- Portfolio Modal 6 TREKABILLY-->
-
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Trekabilly</h2>
-                            <p class="item-intro text-muted">Trekabilly is a community website where individuals post tips about their own city and cities they’ve visited.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/trekabilly-project.png" alt="">
-                            <p><a href="http://www.trekabilly.com/">Trekabilly</a> was developed as part of a hackathon competition at General Assembly. The Hack challenged teams of developers, project managers and UX specialists to come up with a viable web app. The development cycle covered 2 sprints that followed the latest Agile development processes. </p>
-                            <hr>
-
-
-                        <a href="https://github.com/BobbysAngels/GA-Labs-Hackathon" target='_blank'><button type="button" class="btn btn-primary">SEE CODE</button></a>
-                           or
-                        <a href="http://www.trekabilly.com" target='_blank'><button type="button" class="btn btn-primary">LIVE PREVIEW</button></a>
-
-                            <hr>
-                            <p>The Trekabilly site was developed using the following technologies:</p>
-                            <ul style='list-style-type: none'; float: left>
-                                <li><i>Ruby on Rails</b></i></li>
-                                <li><i>JavaScript</i></li>
-                                <li><i>PostgreSQL - Database</i></li>
-                                <li><i>Google Maps API</i></li>
-                                <li><i>HTML5 & CSS3</i></li>
-                                <li><i>MaterializeCSS</i></li>
-                                <li><i>Draw.io - ERD</i></li>
-                                <li><i>Adobe Illustator & Moqups.com - Wireframes</i></li>
-                            </ul>
-                            <br>
-                            <hr>
-                           <h6>Application Features:</h6> 
-                            <p>Anyone looking to plan a trip will be able to search for posts by category, keyword, or location and receive results that talk about the whole city, not just the tourist bits. We’ll also integrate voting on posts to engage the community further and do an even better job of giving the most interesting results.</p>
-
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Portfolio</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-                             <!-- Portfolio Modal 7 JOB-SEARCH-TRACKER -->
-
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Jobbo</h2>
-                            <p class="item-intro text-muted">Jobbo was created with intentions to help Job Seekers keep track of the applications they send out to employers.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/job-tracker.png" alt="">
-                            <img class="img-responsive img-centered" src="img/portfolio/job-tracker-2.png" alt="">
-                            <img class="img-responsive img-centered" src="img/portfolio/job-tracker-3.png" alt="">
-
-                             <ul style='list-style-type: none'> <strong>Jobbo was built using:</strong> 
-                            <br><br>
-                                <li><i>Ruby On Rails</i></li>
-                                <li><i>JavaScript</i></li>
-                                <li><i>jQuery</i></li>
-                                <li><i>HAML</i></li>
-                                <li><i>SASS</i></li>
-                                <li><i>SQLite3 / PostgreSQL</i></li>
-                            </ul>
-
-                            <br>
-                            <hr>
-
-
-                       <a href="https://github.com/slyka85/Jobbo" target='_blank'><button type="button" class="btn btn-primary">SEE CODE</button></a>
-                           or
-                        <a href="https://jobbo-search.herokuapp.com" target='_blank'><button type="button" class="btn btn-primary">LIVE PREVIEW</button></a>
-
-                            <hr> 
-                            <h6>Application Features:</h6>
-                          
-                            <p>User can create a personal account (sign up / log in) and edit his/her profile settings.
-                            </p>
-
-                            <p>User can create/edit/delete a job application to track</p>
-                            <p>Adding job description, cover letter, notes, date etc</p>
-
-                            <p>User can change a status of his/her application </p>
-
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Portfolio</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-                            <!-- Portfolio Modal 8 GIRL-ON-RAILS-BLOG  -->
-
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Rails Blog for Ruby Newbies</h2>
-                            <p class="item-intro text-muted">A blog I write to help aspiring coders advance in Ruby on Rails development</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/girl-on-rails.png" alt="">
-        
-                            <ul style='list-style-type: none'> <strong>The Blog was built using:</strong> 
-                            <br><br>
-                                <li><i>Ruby On Rails</i></li>
-                                <li><i>JavaScript</i></li>
-                                <li><i>jQuery</i></li>
-                                <li><i>HTML/CSS</i></li>
-                                <li><i>SQLite3 / PostgreSQL</i></li>
-                            </ul>
-                            <br>
-                            <hr>
-
-                        <a href="https://github.com/slyka85/Girl-On-Rails-Blog" target='_blank'><button type="button" class="btn btn-primary">SEE CODE</button></a>
-                           or
-                        <a href="http://girlonrailsblog.herokuapp.com/" target='_blank'><button type="button" class="btn btn-primary">LIVE PREVIEW</button></a>
-
-                            <hr> 
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Portfolio</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -800,10 +390,11 @@
         var skillsTemplate = $("#skills-template").html();
         var skillsHtml = Mustache.to_html(skillsTemplate, data);
         $('.skills-target').html(skillsHtml);
+
+        var modalDetailsTemplate = $("#modal-details-template").html();
+        var modalDetailsHtml = Mustache.to_html(modalDetailsTemplate, data);
+        $('.modal-details-target').html(modalDetailsHtml);
     });
-
-
-
 
 });
 </script>
