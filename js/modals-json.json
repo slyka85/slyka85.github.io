@@ -52,35 +52,35 @@
   "career-path": [
   {
     "career-li-class":"timeline",
-    "career-image":"perscholas.jpeg",
+    "career-sprite":"perscholas",
     "career-date":"October - December 2014",
     "career-subheading":"Software Testing Education Program at Per Scholas",
     "career-text":"Graduated from the Software Testing Education Program (STEP) at Per Scholas that included a 9-week training on Rapid Testing Intensive (RTI) and Rapid Software Testing (RST) created by James Bach of Satisfice. Part of the training included working on projects within small teams to test a flash-based game, mind-mapping application and others that required the need to write formal bug reports, prepared outlines of risks and areas to test, as well as a final report"
     },
   {
     "career-li-class":"timeline-inverted",
-    "career-image":"eko.gif",
+    "career-sprite":"eko",
     "career-date":"January - March 2015",
     "career-subheading":"Software QA Engineer Intern at EKO Communications",
     "career-text":"Performed manual testing of mobile applications on Android and iOS devices\n• Tested a web-based application\n• Identified potential risks and created a risk analysis report\n• Created Product Coverage Outline using mind maps\n• Wrote and executed test cases for regression testing of new builds of an application\n• Evaluated quality of a product on different stages of its development\n• Created comprehensive database of documented test defects and procedures to enable accurate replication and ensure compliance with standards"
     },
   {
     "career-li-class":"timeline",
-    "career-image":"ga.png",
+    "career-sprite":"ga",
     "career-date":"March - July 2015",
     "career-subheading":"Web Development Immersive Bootcamp at General Assembly",
     "career-text":"During a 3-month course, I Built a Wiki App using Node.js, Express.js, SQLite3\n• Created a Contacts Manager app using JavaScript, Semantic-UI, Mustache.js, jQuery, JSON-Server.\n• Developed a Travel planning app using Ruby on Rails, JavaScript, jQuery, Bootstrap and PostgreSQL\n• Built a Meetup Events scheduling application with a small group, using Backbone.js and Ruby on Rails"
     },
       {
     "career-li-class":"timeline-inverted",
-    "career-image":"devshop.png",
+    "career-sprite":"devshop",
     "career-date":"July 2015 - November 2015",
     "career-subheading":"Back End Web Developer at NYC Devshop",
     "career-text":"Developed an MVP of a large scale Ruby on Rails application\n• Integrated user-facing elements developed by front-end developers with server logic\n• Integrated 15+ social media & financial/accounting APIs into the app to perform calculations needed for the project‘s logic\n• Performed testing of the application features. Fixed application bugs\n• Maintained code quality and organization"
     },
       {
     "career-li-class":"timeline",
-    "career-image":"onewire.png",
+    "career-sprite":"onewire",
     "career-date":"January 2016 - April 2016",
     "career-subheading":"Front-End Developer Intern at OneWire",
     "career-text":"• Worked on Developing Front-End for the main site using HTML/LESS/JavaScript\n • Coded HTML Emails.\n • Ran Unit Tests.\n Environment: ASP.Net, C#, MySQL, HTML, CSS/Less, JavaScript, Visual Studio, Source Control"
