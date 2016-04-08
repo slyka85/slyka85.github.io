@@ -337,6 +337,10 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     line-height: 40px;
 }
+.section-heading {
+    font-family: 'Reenie Beanie', cursive;
+    
+}
 
 header .intro-text .intro-lead-in span {
     font-size: 75%;
