@@ -224,6 +224,21 @@
     "code-link":"https://github.com/slyka85/Girl-On-Rails-Blog",
     "app-link":"http://girlonrailsblog.herokuapp.com/"
     }
-
-  ]
+  ],
+    "footer": [
+    {
+    "social-link":"https://github.com/slyka85",
+    "social-icon":"fa fa-github"
+    },
+    {
+    "social-link":"https://twitter.com/AnyaMelnyk",
+    "social-icon":"fa fa-twitter",
+    },
+    "social-link":"https://www.linkedin.com/in/anyamelnyk",
+    "social-icon":"fa fa-linkedin",
+    },
+    "social-link":"http://codepen.io/slyka85",
+    "social-icon":"fa fa-codepen"
+    }
+    ]
 }
