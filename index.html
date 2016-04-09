@@ -306,6 +306,7 @@
                                     <!-- Portfolio Modal Details -->
                  <div class="modal-details-target"></div>     
                  <script type="text/template" id="modal-details-template">
+                 {{#modal-details}}
 
     <div class="portfolio-modal modal fade" id="{{modal-id}}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -345,6 +346,7 @@
             </div>
         </div>
     </div>
+    {{/modal-details}}
     </script>
 
     <!-- jQuery -->
