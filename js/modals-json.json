@@ -232,11 +232,13 @@
     },
     {
     "social-link":"https://twitter.com/AnyaMelnyk",
-    "social-icon":"fa fa-twitter",
+    "social-icon":"fa fa-twitter"
     },
+    {
     "social-link":"https://www.linkedin.com/in/anyamelnyk",
-    "social-icon":"fa fa-linkedin",
+    "social-icon":"fa fa-linkedin"
     },
+    {
     "social-link":"http://codepen.io/slyka85",
     "social-icon":"fa fa-codepen"
     }
