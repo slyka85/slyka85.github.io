@@ -143,6 +143,9 @@
     "modal-img1":"img/portfolio/pack-inside1.png",
     "modal-img2":"img/portfolio/pack-inside2.png",
     "modal-img3":"",
+    "img-link1":"",
+    "img-link2":"",
+    "img-link3":"",
     "modal-stack-list":"<li>Ruby On Rails</li><li>JavaScript</li><li>jQuery</li><li>HTML/CSS</li><li>PostgreSQL</li><strong>10 API integrated:</strong><li><i>Exchange Rates API</i></li><li><i>Autocomplete City API </i></li><li><i>Google Maps API </i></li><li><i> TimeZoneDB API </i></li><li><i>Weather Underground API </i></li><li><i>IP Address Geolocation API </i></li><li><i> Facebook Oauth API </i></li><li><i>Google Oauth API </i></li><li><i>Linkedin Oauth API </i></li><li><i>Github Oauth API </i></li>",
     "code-link":"https://github.com/slyka85/Pack-n-Roll",
     "app-link":"https://pack-n-roll.herokuapp.com",
@@ -157,7 +160,8 @@
     "modal-img3":"ccs-projects/gifs/css-fish-animation.gif",
     "img-link1":"http://slyka85.github.io/ccs-projects/CSS-clock.html",
     "img-link2":"http://slyka85.github.io/ccs-projects/CSS-car.html",
-    "img-link3":"http://slyka85.github.io/ccs-projects/CSS-fish.html"
+    "img-link3":"http://slyka85.github.io/ccs-projects/CSS-fish.html",
+    "app-features":"HTML5/CSS3"
     },
     {
     "modal-id":"portfolioModal3",
