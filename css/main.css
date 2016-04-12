@@ -431,6 +431,20 @@ section h3.section-subheading {
     }
 }
 
+
+#skills {
+    background-color: #27131C;
+}
+
+#skills .section-heading,
+#skills .skill-heading {
+    color: whitesmoke;
+}
+
+#skills .section-subheading,
+#skills .text-muted {
+    color: wheat;
+}
 .skill-heading {
     margin: 15px 0;
     text-transform: none;
