@@ -16,8 +16,8 @@ html {
 
 .icon-wrapper {
 	position: absolute;
-	top: 45%;
-	left: 300px;
+	top: 340px;
+	left: 290px;
 	color: white;
 	font-size: 40px;
 	overflow: hidden;
@@ -38,15 +38,15 @@ margin-right: 120px;
 }
 [class^=devicon]:nth-child(2) {
 animation: icon-eaten 0.1s 1.35s forwards linear;
-margin-right: 190px;
+margin-right: 220px;
 
 }
 [class^=devicon]:nth-child(3) {
-animation: icon-eaten 0.1s 2.22s forwards linear;
-margin-right: 300px;
+animation: icon-eaten 0.1s 2.3s forwards linear;
+margin-right: 340px;
 }
 [class^=devicon]:nth-child(4) {
-animation: icon-eaten 0.1s 3.15s forwards linear;
+animation: icon-eaten 0.1s 3.3s forwards linear;
 }
 /*[class^=devicon]:nth-child(5) {
 animation: icon-eaten 0.3s 1.9s forwards linear;
@@ -58,15 +58,15 @@ animation: icon-eaten 0.3s 1.9s forwards linear;
 	border-radius: 50%;
 	position: absolute;
 	left: 100px;
-	top: calc(50% - 100px);
+	top: 270px;
 	animation: pacman-moving 4s forwards ease-in;
 
 }
 
-.pacman-wrapper {
+/*.pacman-wrapper {
 	width: 200px;
 	height: 200px;
-}
+}*/
 
 .pacman:before {
 	content: "";
@@ -97,19 +97,13 @@ animation: icon-eaten 0.3s 1.9s forwards linear;
 	100% {transform: translate(100%) scale(0.2);}
 
 }
-@keyframes color {
-	0% {background-color: #1abc9c;}
-	20% {background-color: #e67e22;}
-	40% {background-color: #9b59b6;}
-	60% {background-color: #3498db;}
-	80% {background-color: #34495e;}
-}
+
 @keyframes pacman-moving {
-	0% {background-color: yellow;}
+	0% {background-color: yellow; left: 100px;}
 	25% {background-color: #1abc9c;}
 	50% {background-color: #e67e22;}
 	75% {background-color: #9b59b6;}
-	100% {background-color: #3498db; left: 1280px;}
+	100% {background-color: black; left: 1280px;}
 }
 @keyframes icon-eaten {
 	100% {visibility: hidden;}
@@ -146,9 +140,9 @@ text-shadow:0px 1px 0px #b23e35;
 
 <a href="#" class="run-again" onClick="refreshPage()">FEED PACMAN</a>
 
-	<div class="pacman-wrapper">
+	<!-- <div class="pacman-wrapper"> -->
 	<div class="pacman"></div>
-	</div>
+	<!-- </div> -->
 <div class="icon-wrapper">
 	<i class="devicon-apple-original" style="color: #1abc9c;"></i>
 	<i class="devicon-android-plain" style="color: #e67e22;"></i>
