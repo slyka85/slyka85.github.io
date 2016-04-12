@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pacman</title>
+		<style>
+
+html {
+  box-sizing: border-box;
+  background-color: black;
+  overflow: hidden;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.icon-wrapper {
+	position: absolute;
+	top: 45%;
+	left: 300px;
+	color: white;
+	font-size: 40px;
+	overflow: hidden;
+	width: 100%;
+white-space: nowrap;
+display: inline-block;
+
+
+	/*z-index: -1;*/
+}
+[class^=devicon] {
+margin-right: 200px;
+/*z-index: -1;	*/
+}
+[class^=devicon]:nth-child(1) {
+animation: icon-eaten 0.1s 0.4s forwards linear;
+margin-right: 120px;
+}
+[class^=devicon]:nth-child(2) {
+animation: icon-eaten 0.1s 1.35s forwards linear;
+margin-right: 190px;
+
+}
+[class^=devicon]:nth-child(3) {
+animation: icon-eaten 0.1s 2.22s forwards linear;
+margin-right: 300px;
+}
+[class^=devicon]:nth-child(4) {
+animation: icon-eaten 0.1s 3.15s forwards linear;
+}
+/*[class^=devicon]:nth-child(5) {
+animation: icon-eaten 0.3s 1.9s forwards linear;
+}*/
+.pacman {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	border-radius: 50%;
+	position: absolute;
+	left: 100px;
+	top: calc(50% - 100px);
+	animation: pacman-moving 4s forwards ease-in;
+
+}
+
+.pacman-wrapper {
+	width: 200px;
+	height: 200px;
+}
+
+.pacman:before {
+	content: "";
+	position: absolute;
+	width:15px;
+	height: 15px;
+	background: black;
+	left: 40%;
+	top: 20%;
+	border-radius: 50%;
+}
+.pacman:after {
+	content: "";
+	position: absolute;
+	 width: 0;
+    height: 0;
+    border-right: 100px solid black;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    left: 50%;
+    top: 10%;
+    transform: scale(1);
+	animation: eating 0.5s 0.3s infinite alternate ease-in-out;
+
+}
+
+@keyframes eating {
+	100% {transform: translate(100%) scale(0.2);}
+
+}
+@keyframes color {
+	0% {background-color: #1abc9c;}
+	20% {background-color: #e67e22;}
+	40% {background-color: #9b59b6;}
+	60% {background-color: #3498db;}
+	80% {background-color: #34495e;}
+}
+@keyframes pacman-moving {
+	0% {background-color: yellow;}
+	25% {background-color: #1abc9c;}
+	50% {background-color: #e67e22;}
+	75% {background-color: #9b59b6;}
+	100% {background-color: #3498db; left: 1280px;}
+}
+@keyframes icon-eaten {
+	100% {visibility: hidden;}
+}
+@keyframes pacman2-eating {
+	100% {border-right: 100px solid #103252;}
+}
+
+.run-again {
+-moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+-webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
+box-shadow:inset 0px 39px 0px -24px #e67a73;
+background-color:#e4685d;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border-radius:4px;
+border:1px solid #ffffff;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:15px;
+padding:6px 15px;
+text-decoration:none;
+text-shadow:0px 1px 0px #b23e35;
+}
+
+</style>
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+</head>
+<body>
+
+<a href="#" class="run-again" onClick="refreshPage()">FEED PACMAN</a>
+
+	<div class="pacman-wrapper">
+	<div class="pacman"></div>
+	</div>
+<div class="icon-wrapper">
+	<i class="devicon-apple-original" style="color: #1abc9c;"></i>
+	<i class="devicon-android-plain" style="color: #e67e22;"></i>
+	<i class="devicon-apple-original" style="color: #9b59b6;"></i>
+	<i class="devicon-android-plain" style="color: #3498db;"></i>
+	<!-- <i class="devicon-apple-original" style="color: #34495e;"></i> -->
+
+</div>
+
+<script>
+	function refreshPage(){
+    window.location.reload();
+} 
+</script>
+</body>
+</html>
