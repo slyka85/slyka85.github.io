@@ -299,17 +299,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-/*    background-image: linear-gradient(to bottom, rgba(0, 10, 20, 0.4), rgba(50, 10, 0, 0.4) ), url(../img/me-front.jpg);*/
-/*    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/laptop-bg.jpg);*/
-/*    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://kaboompics.com/files/upload/o_19slkiib31upa1d2k1vsu10fdbkn7_new.jpg);*/
-/*        background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://s6.favim.com/orig/140806/beautiful-black-coffee-computer-Favim.com-1974488.jpg);*/
 
-background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/girl-cup.jpg); 
-/*background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(http://www191.lunapic.com/do-not-link-here-use-hosting-instead/145472826982130?5870282706); */
-/*background-image: linear-gradient(to right bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/me-girls-bg.jpeg); */
-
-
-
+background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/header.jpg); 
     background-attachment: fixed;
     background-position: center center;
     background-repeat: none;
