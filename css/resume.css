@@ -43,12 +43,13 @@ opacity: 1;*/
 
 
 .sprite { 
-	background: white url('../img/about/sprite.png') no-repeat top left; 
+	background: white url('../img/about/sprite-new.png') no-repeat top left; 
 	width: 100%; height: 100%; background-size: cover;
 	border-radius: 50%; } 
 .sprite.perscholas { background-position: 0 0; } 
-.sprite.eko { background-position: 0 20%; } 
-.sprite.ga { background-position: 0 40%; } 
-.sprite.devshop { background-position: 0 60%; } 
-.sprite.onewire { background-position: 0 80%; } 
+.sprite.eko { background-position: 0 16.66%; } 
+.sprite.ga { background-position: 0 33.33%; } 
+.sprite.devshop { background-position: 0 50%; } 
+.sprite.onewire { background-position: 0 66.8%; } 
+.sprite.folica { background-position: 0 83.4%; } 
 .sprite.hire-me { background-position: 0 100%; } 

@@ -84,6 +84,13 @@
          "career-date":"January 2016 - April 2016",
          "career-subheading":"Front-End Developer Intern at OneWire",
          "career-text":"• Worked on Developing Front-End for the main site using HTML/LESS/JavaScript\n • Coded HTML Emails.\n • Ran Unit Tests.\n Environment: ASP.Net, C#, MySQL, HTML, CSS/Less, JavaScript, Visual Studio, Source Control"
+      },
+      {  
+         "career-li-class":"timeline-inverted",
+         "career-sprite":"folica",
+         "career-date":"April 2016 - Present",
+         "career-subheading":"Front-End Developer at Folica",
+         "career-text":"• Developing functional and smooth, easy-to-operate and eyecatching web application \n •  Performing website maintenance and enhancements \n •  Providing assistance to the back-end developers in troubleshooting and coding"
       }
    ],
    "skills":[  
