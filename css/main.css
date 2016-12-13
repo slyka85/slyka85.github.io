@@ -251,6 +251,7 @@ header .intro-text {
 }
 
 .intro-lead-in {
+    text-align: left;
 /*        position: absolute;
         top: 40%;
         left: calc(50% - 245px);*/
@@ -296,7 +297,7 @@ header .intro-text {
 
 
 header {
-    text-align: center;
+  /*  text-align: center;*/
     color: #fff;
     background-attachment: scroll;
 
@@ -341,6 +342,7 @@ header .intro-text .intro-lead-in span {
     }
 
 header .intro-text .intro-heading {
+    text-align: center;
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;

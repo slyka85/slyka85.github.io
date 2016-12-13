@@ -39,21 +39,31 @@ $('.navbar-collapse ul li a').click(function() {
  $('#get-started-button').addClass('animated fadeInUp');
   $("#typed1, #typed2").css('text-shadow', 'rgb(14, 2, 2) 10px 10px 7px');
 
+  // $("#typed1").typed({
+  //       strings: ["^1000 Hi! ^500I'm Anya... ^400 and I love "],
+  //       typeSpeed: 90,
+  //       backDelay: 500,
+  //       cursorChar: "|",
+  //       callback: function() {
+  //       			noCursor();
+  //             showThis();
+  //           }
+  
+  //     });
+
   $("#typed1").typed({
-        strings: ["^1000 Hi! ^500I'm Anya... ^400 and I love "],
-        typeSpeed: 90,
+        strings: ["^1000 Hey! Glad you came by. ^500I'm Anya^100. ^400<br /> Web developer that "],
+        typeSpeed: 80,
         backDelay: 500,
         cursorChar: "|",
         callback: function() {
-        			noCursor();
+              hideCursor();
               showThis();
             }
   
       });
-
-
   
-		 function noCursor() {
+		 function hideCursor() {
 			$('.typed-cursor').css({ display: 'none' });
 
 		 }
@@ -62,23 +72,30 @@ $('.navbar-collapse ul li a').click(function() {
      function showThis(){
 
 
-   $('body').delay(3000).queue(function(){
-   	 $('#get-started-button').removeClass('animated fadeInUp');
-     $('#get-started-button').addClass('animated rotateIn').clearQueue();
+   // $('body').delay(3000).queue(function(){
+   // 	 $('#get-started-button').removeClass('animated fadeInUp');
+   //   $('#get-started-button').addClass('animated rotateIn').clearQueue();
 
-    });
+   //  });
               	
 
 
 
-        $("#typed2").typed({
-              strings: ["making cool stuff.^100", "to code. <br> ^200 <br>Welcome! ^600 :)"],
-              backDelay: 300,    
-              typeSpeed: 90,
-              backSpeed: 50,
-              callback: function() {
+        // $("#typed2").typed({
+        //       strings: ["making cool stuff.^100", "to code. <br> ^200 <br>Welcome! ^600 :)"],
+        //       backDelay: 300,    
+        //       typeSpeed: 90,
+        //       backSpeed: 50,
+        //       callback: function() {
 
-              }
+        //       }
+        //   });
+
+        $("#typed2").typed({
+              strings: ["enjoys the problem solving of a <span style='color:#8BC34A;'>back-end</span> development...^100", "loves the creative part of a <span style='color:#00BCD4;'>front-end</span> development <span style='color: red;' class='heart'>&#x2661;</span>"],
+              backDelay: 500,    
+              typeSpeed: 80,
+              backSpeed: 20
           });
       };
 
