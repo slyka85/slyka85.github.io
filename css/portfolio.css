@@ -102,3 +102,7 @@ height: 202px;
     z-index: 100;
 
 }
+
+.modals-preview-target {
+  margin-top: 40px;
+}

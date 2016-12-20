@@ -52,13 +52,13 @@ $('.navbar-collapse ul li a').click(function() {
   //     });
 
   $("#typed1").typed({
-        strings: ["^1000 Hey! Glad you came by. ^500I'm Anya^100. ^400<br /> Web developer that "],
+        strings: ["^1000 Hey! Glad you came by. ^500I'm Anya^100. ^400<br /> I love building <span style='color:#8BC34A;'>functional</span> and <span style='color:#00BCD4;'>beautiful</span> apps. <br /> ^500Check out my work! "],
         typeSpeed: 80,
         backDelay: 500,
         cursorChar: "|",
         callback: function() {
               hideCursor();
-              showThis();
+              //showThis();
             }
   
       });
@@ -72,27 +72,8 @@ $('.navbar-collapse ul li a').click(function() {
      function showThis(){
 
 
-   // $('body').delay(3000).queue(function(){
-   // 	 $('#get-started-button').removeClass('animated fadeInUp');
-   //   $('#get-started-button').addClass('animated rotateIn').clearQueue();
-
-   //  });
-              	
-
-
-
-        // $("#typed2").typed({
-        //       strings: ["making cool stuff.^100", "to code. <br> ^200 <br>Welcome! ^600 :)"],
-        //       backDelay: 300,    
-        //       typeSpeed: 90,
-        //       backSpeed: 50,
-        //       callback: function() {
-
-        //       }
-        //   });
-
         $("#typed2").typed({
-              strings: ["enjoys the problem solving of a <span style='color:#8BC34A;'>back-end</span> development...^100", "loves the creative part of a <span style='color:#00BCD4;'>front-end</span> development <span style='color: red;' class='heart'>&#x2661;</span>"],
+              strings: ["enjoys the problem solving of a <span style='color:#8BC34A;'>back-end</span> development...^100", "loves the creative part of a <span style='color:#00BCD4;'>front-end</span> development"],
               backDelay: 500,    
               typeSpeed: 80,
               backSpeed: 20
