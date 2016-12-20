@@ -158,8 +158,8 @@
             { "modal-img":"img/portfolio/folica-filters-page.png" },
             { "modal-img":"img/portfolio/folica-category-page.png" },
             { "modal-img":"img/portfolio/folica-large.png" },
-            { "modal-img5":"img/portfolio/folica-small.png" },
-            { "modal-img6":"img/portfolio/folica-menu.png" }
+            { "modal-img":"img/portfolio/folica-small.png" },
+            { "modal-img":"img/portfolio/folica-menu.png" }
          ],
          "modal-stack-list":"<li>Java</li><li>JavaScript / jQuery </li><li>HTML/CSS</li><li>MySQL</li><li>Freemarker Templating</li>",
          "code-link":"http://folica.com",
@@ -172,7 +172,7 @@
          "modal-intro":"Pack'N'Roll is an application to help users plan and pack for upcoming trips.",
          "modal-images": [
             { "modal-img":"img/portfolio/pack-inside1.png" },
-            { "modal-img2":"img/portfolio/pack-inside2.png" }
+            { "modal-img":"img/portfolio/pack-inside2.png" }
          ],
          "modal-stack-list":"<li>Ruby On Rails</li><li>JavaScript</li><li>jQuery</li><li>HTML/CSS</li><li>PostgreSQL</li><strong>10 API integrated:</strong><li><i>Exchange Rates API</i></li><li><i>Autocomplete City API </i></li><li><i>Google Maps API </i></li><li><i> TimeZoneDB API </i></li><li><i>Weather Underground API </i></li><li><i>IP Address Geolocation API </i></li><li><i> Facebook Oauth API </i></li><li><i>Google Oauth API </i></li><li><i>Linkedin Oauth API </i></li><li><i>Github Oauth API </i></li>",
          "code-link":"https://github.com/slyka85/Pack-n-Roll",
