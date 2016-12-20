@@ -153,12 +153,14 @@
          "modal-id":"portfolioModal1",
          "modal-header":"Folica",
          "modal-intro":"I've worked at Folica as a Front End developer, adding new features, maintaining and testing it across multiple browsers, platforms, and devices. Worked with back-end developers and web designers to improve usability and converted it into a fully responsive and adaptive web app. ",
-         "modal-img1":"img/portfolio/folica-home-page-large.png",
-         "modal-img2":"img/portfolio/folica-filters-page.png",
-         "modal-img3":"img/portfolio/folica-category-page.png",
-         "modal-img4":"img/portfolio/folica-large.png",
-         "modal-img5":"img/portfolio/folica-small.png",
-         "modal-img6":"img/portfolio/folica-menu.png",
+         "modal-images": [
+            { "modal-img":"img/portfolio/folica-home-page-large.png" },
+            { "modal-img":"img/portfolio/folica-filters-page.png" },
+            { "modal-img":"img/portfolio/folica-category-page.png" },
+            { "modal-img":"img/portfolio/folica-large.png" },
+            { "modal-img5":"img/portfolio/folica-small.png" },
+            { "modal-img6":"img/portfolio/folica-menu.png" }
+         ],
          "modal-stack-list":"<li>Java</li><li>JavaScript / jQuery </li><li>HTML/CSS</li><li>MySQL</li><li>Freemarker Templating</li>",
          "code-link":"http://folica.com",
          "app-link":"http://folica.com",
@@ -168,8 +170,10 @@
          "modal-id":"portfolioModal2",
          "modal-header":"Pack'n'Roll",
          "modal-intro":"Pack'N'Roll is an application to help users plan and pack for upcoming trips.",
-         "modal-img1":"img/portfolio/pack-inside1.png",
-         "modal-img2":"img/portfolio/pack-inside2.png",
+         "modal-images": [
+            { "modal-img":"img/portfolio/pack-inside1.png" },
+            { "modal-img2":"img/portfolio/pack-inside2.png" }
+         ],
          "modal-stack-list":"<li>Ruby On Rails</li><li>JavaScript</li><li>jQuery</li><li>HTML/CSS</li><li>PostgreSQL</li><strong>10 API integrated:</strong><li><i>Exchange Rates API</i></li><li><i>Autocomplete City API </i></li><li><i>Google Maps API </i></li><li><i> TimeZoneDB API </i></li><li><i>Weather Underground API </i></li><li><i>IP Address Geolocation API </i></li><li><i> Facebook Oauth API </i></li><li><i>Google Oauth API </i></li><li><i>Linkedin Oauth API </i></li><li><i>Github Oauth API </i></li>",
          "code-link":"https://github.com/slyka85/Pack-n-Roll",
          "app-link":"https://pack-n-roll.herokuapp.com",
@@ -179,23 +183,23 @@
          "modal-id":"portfolioModal3",
          "modal-header":"Projects built with CSS3",
          "modal-intro":"This collection includes my latest hobby - animations that do not use any JavaScript / jQuery. CSS3 is powerful enough on its own to create amazing effects.",
-         "modal-img1":"ccs-projects/gifs/css-room-animation.gif",
-         "modal-img2":"ccs-projects/gifs/css-car-animation.gif",
-         "modal-img3":"ccs-projects/gifs/css-fish-animation.gif",
-         "modal-img4":"ccs-projects/gifs/css-pacman-animation.gif",
-         "img-link1":"http://slyka85.github.io/ccs-projects/CSS-clock.html",
-         "img-link2":"http://slyka85.github.io/ccs-projects/CSS-car.html",
-         "img-link3":"http://slyka85.github.io/ccs-projects/CSS-fish.html",
-         "img-link4":"http://slyka85.github.io/ccs-projects/CSS-pacman.html",
+         "modal-images": [
+            { "modal-img":"ccs-projects/gifs/css-room-animation.gif", "img-link":"http://slyka85.github.io/ccs-projects/CSS-clock.html" },
+            { "modal-img":"ccs-projects/gifs/css-car-animation.gif", "img-link":"http://slyka85.github.io/ccs-projects/CSS-car.html" },
+            { "modal-img":"ccs-projects/gifs/css-fish-animation.gif", "img-link":"http://slyka85.github.io/ccs-projects/CSS-fish.html" },
+            { "modal-img":"ccs-projects/gifs/css-pacman-animation.gif", "img-link":"http://slyka85.github.io/ccs-projects/CSS-pacman.html" }
+         ],
          "modal-stack-list":"<li>HTML5/CSS3</li>"
       },
       {  
          "modal-id":"portfolioModal4",
          "modal-header":"Teach Me How To Cook",
          "modal-intro":"This Appllication allows my friends to share their culinary skills with me by posting their recipes and teaching me how to cook :)",
-         "modal-img1":"img/portfolio/teach-me-how-to-cook.png",
-         "modal-img2":"img/portfolio/teach-me-how-to-cook-1.png",
-         "modal-img3":"img/portfolio/teach-me-how-to-cook-2.png",
+         "modal-images": [
+            { "modal-img":"img/portfolio/teach-me-how-to-cook.png" },
+            { "modal-img":"img/portfolio/teach-me-how-to-cook-1.png" },
+            { "modal-img":"img/portfolio/teach-me-how-to-cook-2.png" }
+         ],
          "modal-stack-list":"<li>Ruby On Rails</li><li>JavaScript</li><li>jQuery</li><li>HTML/CSS</li><li>SQLite3 / PostgreSQL</li>",
          "code-link":"https://github.com/slyka85/Teach-Me-How-To-Cook",
          "app-link":"https://teach-me-how-to-cook.herokuapp.com",
@@ -205,8 +209,10 @@
          "modal-id":"portfolioModal5",
          "modal-header":"Dating App",
          "modal-intro":"DatingApp is an application similar to Tinder, where users can like or dislike each other and be matched on mutual ineterests.",
-         "modal-img1":"img/portfolio/datingApp-inside1.png",
-         "modal-img2":"img/portfolio/datingApp-inside2.png",
+         "modal-images": [
+            { "modal-img":"img/portfolio/datingApp-inside1.png" },
+            { "modal-img":"img/portfolio/datingApp-inside2.png" }
+         ],
          "modal-stack-list":"<li>Ruby On Rails</li><li>JavaScript</li><li>jQuery</li><li>HTML/CSS</li><li>SQLite3</li><li>Deployed to Digital Ocean using Apache and Passenger web servers and Capistrano Gem</li>",
          "code-link":"https://github.com/slyka85/datingApp",
          "app-link":"http://192.241.166.229",
@@ -216,8 +222,10 @@
          "modal-id":"portfolioModal6",
          "modal-header":"Imprompt2",
          "modal-intro":"Impromptu is all about spontenaity for the users, who have a couple hours and want to find something of interest. Impromptu has been created in collaboration with 4 students at General Aseembly Web Development Bootcamp as one of the assignments.",
-         "modal-img1":"img/portfolio/impromptu-inside1.png",
-         "modal-img2":"img/portfolio/impromptu-inside2.png",
+         "modal-images": [
+            { "modal-img":"img/portfolio/impromptu-inside1.png" },
+            { "modal-img":"img/portfolio/impromptu-inside2.png" }
+         ],
          "modal-stack-list":"<li>Backbone.js</li><li>Ruby On Rails</li><li>JavaScript</li><li>jQuery</li><li>Moment.js</li><li>HTML/CSS</li><li>PostgreSQL</li>",
          "code-link":"https://github.com/Impromp2/Impromp2",
          "app-link":"https://impromp2-meetup.herokuapp.com/",
@@ -227,7 +235,9 @@
          "modal-id":"portfolioModal7",
          "modal-header":"Trekabilly",
          "modal-intro":"Trekabilly is a community website where individuals post tips about their own city and cities they’ve visited. Trekabilly was developed as part of a hackathon competition at General Assembly. The Hack challenged teams of developers, project managers and UX specialists to come up with a viable web app. The development cycle covered 2 sprints that followed the latest Agile development processes.",
-         "modal-img1":"img/portfolio/trekabilly-project.png",
+         "modal-images": [
+            { "modal-img":"img/portfolio/trekabilly-project.png" }
+         ],
          "modal-stack-list":"<li>Ruby on Rails</li><li>JavaScript</li><li>PostgreSQL - Database</li><li>Google Maps API</li><li>HTML5 & CSS3</li><li>MaterializeCSS</li><li>Draw.io - ERD</li><li>Adobe Illustator & Moqups.com - Wireframes</li>",
          "code-link":"https://github.com/BobbysAngels/GA-Labs-Hackathon",
          "app-link":"http://www.trekabilly.com",
@@ -237,9 +247,11 @@
          "modal-id":"portfolioModal8",
          "modal-header":"Jobbo",
          "modal-intro":"Jobbo was created with intentions to help Job Seekers keep track of the applications they send out to employers.",
-         "modal-img1":"img/portfolio/job-tracker.png",
-         "modal-img2":"img/portfolio/job-tracker-2.png",
-         "modal-img3":"img/portfolio/job-tracker-3.png",
+         "modal-images": [
+            { "modal-img":"img/portfolio/job-tracker.png" },
+            { "modal-img":"img/portfolio/job-tracker-2.png" },
+            { "modal-img":"img/portfolio/job-tracker-3.png" }
+         ],
          "modal-stack-list":"<li>Ruby On Rails</li><li>JavaScript</li><li>jQuery</li><li>HAML</li><li>SASS</li><li>SQLite3 / PostgreSQL</li>",
          "code-link":"https://github.com/slyka85/Jobbo",
          "app-link":"https://jobbo-search.herokuapp.com",
@@ -249,7 +261,9 @@
          "modal-id":"portfolioModal9",
          "modal-header":"Rails Blog for Ruby Newbies",
          "modal-intro":"A blog I write to help aspiring coders advance in Ruby on Rails development.",
-         "modal-img1":"img/portfolio/girl-on-rails.png",
+         "modal-images": [
+            { "modal-img":"img/portfolio/girl-on-rails.png" }
+         ],
          "modal-stack-list":"<li>Ruby On Rails</li><li>JavaScript</li><li>jQuery</li><li>HTML/CSS</li><li>SQLite3 / PostgreSQL</li>",
          "code-link":"https://github.com/slyka85/Girl-On-Rails-Blog",
          "app-link":"http://girlonrailsblog.herokuapp.com/"
