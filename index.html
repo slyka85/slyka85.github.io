@@ -194,15 +194,10 @@
                                 <!-- Project Details Go Here -->
                                 <h2>{{modal-header}}</h2>
                                 <p class="item-intro text-muted">{{modal-intro}}</p>
-
-                                <a href="{{img-link1}}"><img class="img-responsive img-centered" src="{{modal-img1}}" alt="{{modal-header}}">
+                                {{#modal-images}}
+                                <a href="{{img-link}}"><img class="img-responsive img-centered" src="{{modal-img}}" alt="{{modal-header}}">
                                 </a>
-                                <a href="{{img-link2}}"><img class="img-responsive img-centered" src="{{modal-img2}}" alt="{{modal-header}}">
-                                </a>
-                                <a href="{{img-link3}}"><img class="img-responsive img-centered" src="{{modal-img3}}" alt="{{modal-header}}">
-                                </a>
-                                <a href="{{img-link4}}"><img class="img-responsive img-centered" src="{{modal-img4}}" alt="{{modal-header}}">
-                                </a>
+                                {{/modal-images}}
                                 <ul style='list-style-type: none'> <strong>The App was built using:</strong>
                                     <em>{{{modal-stack-list}}}</em>
                                 </ul>
