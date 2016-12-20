@@ -3,47 +3,53 @@
       {  
          "modal-href":"#portfolioModal1",
          "modal-image":"folica-app.png",
+         "modal-heading":"Folica",
+         "modal-text":"JavaScript, HTML/CSS, Freemarker, Java"
+      },
+      {  
+         "modal-href":"#portfolioModal2",
+         "modal-image":"pack-app.png",
          "modal-heading":"PackNRoll",
          "modal-text":"Ruby On Rails, JavaScript, HTML/CSS"
       },
       {  
-         "modal-href":"#portfolioModal2",
+         "modal-href":"#portfolioModal3",
          "modal-image":"pure-css.gif",
          "modal-heading":"Pure CSS Projects",
          "modal-text":"HTML5 & CSS3 only"
       },
       {  
-         "modal-href":"#portfolioModal3",
+         "modal-href":"#portfolioModal4",
          "modal-image":"teach-me-how-to-cook.jpg",
          "modal-heading":"Teach Me How To Cook",
          "modal-text":"Ruby On Rails, JavaScript, HTML/CSS"
       },
       {  
-         "modal-href":"#portfolioModal4",
+         "modal-href":"#portfolioModal5",
          "modal-image":"dating-app.jpg",
          "modal-heading":"eDate",
          "modal-text":"Ruby On Rails, JavaScript, HTML/CSS"
       },
       {  
-         "modal-href":"#portfolioModal5",
+         "modal-href":"#portfolioModal6",
          "modal-image":"impromptu-app.jpg",
          "modal-heading":"Impromptu Meetup",
          "modal-text":"Backbone.js, Ruby on Rails, HTML/CSS"
       },
       {  
-         "modal-href":"#portfolioModal6",
+         "modal-href":"#portfolioModal7",
          "modal-image":"trekabilly-app.jpg",
          "modal-heading":"Trekabilly",
          "modal-text":"Ruby On Rails, JavaScript, HTML/CSS"
       },
       {  
-         "modal-href":"#portfolioModal7",
+         "modal-href":"#portfolioModal8",
          "modal-image":"job-tracker-2.jpg",
          "modal-heading":"Jobbo",
          "modal-text":"Ruby On Rails, JavaScript, HAML/SASS"
       },
       {  
-         "modal-href":"#portfolioModal8",
+         "modal-href":"#portfolioModal9",
          "modal-image":"girl-on-rails.jpg",
          "modal-heading":"Girl On Rails Blog",
          "modal-text":"Ruby On Rails, JavaScript, HAML/SASS"
