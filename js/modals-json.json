@@ -152,7 +152,7 @@
       {  
          "modal-id":"portfolioModal1",
          "modal-header":"Folica",
-         "modal-intro":"Pack'N'Roll is an application to help users plan and pack for upcoming trips.",
+         "modal-intro":"I've worked at Folica as a Front End developer, adding new features, maintaining and testing it across multiple browsers, platforms, and devices. Worked with back-end developers and web designers to improve usability and converted it into a fully responsive and adaptive web app. ",
          "modal-img1":"img/portfolio/pack-inside1.png",
          "modal-img2":"img/portfolio/pack-inside2.png",
          "modal-stack-list":"<li>Java</li><li>JavaScript / jQuery </li><li>HTML/CSS</li><li>MySQL</li><li>Freemarker Templating</li>",
