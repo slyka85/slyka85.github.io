@@ -237,18 +237,19 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle {
       margin-right: 2px !important;
-    border-color: #822954 !important;
-    background-color: #822954 !important;
+      border: 0;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover{
     border-color: #4C1831 !important;
     background-color: #4C1831 !important;
+}
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
 }
 
 .navbar-default .nav li a {
