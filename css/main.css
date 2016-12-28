@@ -343,6 +343,17 @@ header {
     -o-animation: fadein 3s;
 }
 
+.backgroundHack {
+   width:100%;height:100%;
+   background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.1) ), url(../img/header.jpg);
+   background-size:cover;
+   background-position: center center; 
+   background-repeat: no-repeat;
+   position: fixed;
+   z-index:-1;
+   top: 0;left: 0;
+}
+
 
 
 header .intro-text .intro-lead-in {
@@ -451,9 +462,23 @@ section h3.section-subheading {
 #typed1 {
     display: inline-block;
 }
-header {
-    background-attachment: scroll;
+.backgroundHack {
+    display: none;
 }
+header {
+      background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.1) ), url(../img/header.jpg);
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+}
+
+
 }
 
 @media (max-width: 480px) {
