@@ -326,21 +326,21 @@ fieldset[disabled] .btn-xl.active {
 
 
 header {
-  /*  text-align: center;*/
     color: #fff;
-    background-attachment: scroll;
-
-background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.4) ), url(../img/header.jpg); 
+    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.1) ), url(../img/header.jpg);
     background-attachment: fixed;
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     height: 100vh;
-
-
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; 
+    -webkit-animation: fadein 3s; 
+    -o-animation: fadein 3s;
 }
 
 
@@ -361,21 +361,6 @@ header .intro-text .intro-lead-in {
 
 .fa-stack {
     display: inline !important;
-}
-
-header.header {
-    color: #fff;
-    background-attachment: scroll;
-    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.1) ), url(../img/header.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; 
-    -webkit-animation: fadein 3s; 
-    -o-animation: fadein 3s;
 }
 
 header.header .intro-text-wrapper {
@@ -464,6 +449,9 @@ section h3.section-subheading {
 
 #typed1 {
     display: inline-block;
+}
+header {
+    background-attachment: scroll;
 }
 }
 
