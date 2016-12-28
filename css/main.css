@@ -327,7 +327,7 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     color: #fff;
-    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.1) ), url(../img/header.jpg);
+/*    background-image: linear-gradient(to bottom, rgb(1, 9, 18), rgba(50, 10, 0, 0.1) ), url(../img/header.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -336,7 +336,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 100vh;
+    height: 100vh;*/
     animation: fadein 3s;
     -moz-animation: fadein 3s; 
     -webkit-animation: fadein 3s; 
