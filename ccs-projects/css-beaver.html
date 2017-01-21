@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Powerpuff Girls</title>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
+
+/*  -----ANIMATIONS-----  */
+
+@keyframes day-has-come {
+  100% {
+    background: #58646b;
+  }
+}
+
+body {
+ animation: day-has-come 1s 2.5s forwards ease-in-out;
+}
+
+@keyframes eyeslids-open {
+  100% {
+     height: 26%;
+  }
+}
+.beaver-eye-right, .beaver-eye-left  {
+ animation: eyeslids-open 0.3s 3.5s forwards ease-in-out;
+}
+
+
+@keyframes eyebrows-lift {
+  100% {
+     top: 3%;
+  }
+}
+
+.beaver-eyebrow-right,
+.beaver-eyebrow-left {
+   animation: eyebrows-lift 0.3s 3.5s forwards ease-in-out;
+}
+
+
+@keyframes mouth-open {
+  100% {
+    height: 25%;
+  }
+}
+
+.beaver-mouth {
+  animation: mouth-open 0.5s 4.2s forwards ease-in-out;
+}
+
+
+@keyframes left-arm-lift {
+  100% {
+       left: 12%;
+       top: 20%;
+  }
+}
+@keyframes right-arm-lift {
+  100% {
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+  }
+}
+
+.beaver-left-arm {
+   animation: left-arm-lift 0.5s 4.2s forwards ease-in-out;
+}
+.beaver-right-arm {
+     animation: right-arm-lift 0.5s 4.5s forwards ease-in-out;
+}
+
+
+@keyframes tail-wiggle {
+    0% {
+       -webkit-transform: rotate(15deg);
+       transform: rotate(15deg);
+  }
+  100% {
+       -webkit-transform: rotate(24deg);
+       transform: rotate(24deg);
+  }
+}
+
+
+.beaver-body-tail {
+       animation: tail-wiggle 0.2s 4.7s infinite alternate ease-in-out;
+}
+
+/*   ---MAIN STYLES---   */
+
+* {
+ box-sizing: border-box;
+}
+body {
+  background: #000;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Arima Madurai', cursive;
+}
+
+.beaver-wrapper {
+  position: relative;
+  margin: 5% auto;
+  max-width: 300px;
+}
+
+/* BEAVER's HEAD */
+.beaver-head {
+  width: 67%;
+  height: auto;
+  background: #b1784d;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  height: auto;
+  padding-bottom: 85%;
+  border-radius: 55% 45% 10% 10%;
+  border: 5px solid #2f170d;
+}
+
+
+/* BEAVER's EARS */
+.beaver-ear-left,
+.beaver-ear-right {
+  position: absolute;
+  width: 12%;
+  height: 20%;
+  background: #b1784d;
+  border:4px solid #2f170d;
+  overflow: hidden;
+}
+.beaver-ear-left { 
+  border-radius: 50% 50% 0% 50%;
+  left: 37%;
+  top: -14%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+.beaver-ear-right {
+  border-radius: 50% 50% 50% 0%;
+  right: 25%;
+  top: -12%;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.beaver-ear-left-inner,
+.beaver-ear-right-inner {
+  position: absolute;
+  bottom: -5%;
+  width: 75%;
+  height: 90%;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(top, rgba(234,74,86,1) 0%,  rgba(244,152,128,1) 50%);
+  background: linear-gradient(to bottom, rgba(234,74,86,1) 0%,  rgba(244,152,128,1) 50%);
+  border:3px solid #2f170d;
+}
+.beaver-ear-left-inner {
+    left: 20%;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+}
+.beaver-ear-right-inner {
+    right: 20%;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+}
+
+/* BEAVER's EYES */
+.beaver-eye-left,
+.beaver-eye-right {
+  position: absolute;
+  bottom: 69%;
+  height: 0;
+  background: -webkit-linear-gradient(top, rgba(254,255,247,1) 70%,  rgba(217,198,159,1) 80%);
+  background: linear-gradient(to bottom, rgba(254,255,247,1) 70%,  rgba(217,198,159,1) 80%);
+  border-radius: 50%;
+  border: 3px solid #000;
+}
+
+.beaver-eye-left {
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+  left: 18%;
+  width: 28%;
+  
+}
+.beaver-eye-right {
+  right: 18%;
+  width: 31%;
+  border-radius: 50% 70% 50% 50%;
+}
+
+.beaver-eye-left-inner,
+.beaver-eye-right-inner {
+  position: absolute;
+  top: 30%;
+  width: 20%;
+  height: 30%;
+  border-radius: 50%;
+  background: #000;
+}
+.beaver-eye-left-inner {
+  right: 10%;
+}
+.beaver-eye-right-inner {
+  left: 15%;
+}
+
+.beaver-eyebrow-left {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 30%;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: black;
+}
+.beaver-eyebrow-right {
+position: absolute;
+  z-index: 2;
+  top: 10%;
+  right: 28%;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: black;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+/* BEAVER's BODY */
+.beaver-body-bottom {
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  height: 70%;
+  bottom: -30%;
+  background: #fbe3a7;
+  border: 3px solid #2b1813;
+  border-radius: 40% 50% 10% 10%;
+}
+
+/* BEAVER's NOSE */
+.beaver-nose {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 50%;
+  height: 15%;
+  background: #fbe3a7;
+    background: -webkit-linear-gradient(top, rgba(245,213,156,1) 70%,  rgba(213,162,116,1) 78%);
+    background: linear-gradient(to bottom, rgba(245,213,156,1) 70%,  rgba(213,162,116,1) 78%);
+  border-radius: 50% / 50% 50% 100% 100%;
+  border: 3px solid #000;
+  z-index: 4;
+}
+
+.beaver-nose-inner {
+  position: absolute;
+  top: -15%;
+  left: 25%;
+  width: 50%;
+  height: 45%;
+  background: #97501f;
+  border: 5px solid #482610;
+  border-radius: 40% 40% 80% 80%;
+}
+
+/* BEAVER's TEETH */
+.beaver-teeth-container {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  width: 18%;
+  height: 12%;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 10% 10% 40% 40%;
+  z-index: 5;
+}
+.beaver-teeth-container:before {
+  content: "";
+  position: absolute;
+  left: 47%;
+  width: 6%;
+  height: 100%;
+  background: #000;
+}
+
+/* BEAVER's MOUTH */
+.beaver-mouth {
+  width: 35%;
+  height: 5%;
+  position: absolute;
+  z-index: 0;
+  top: 30%;
+  left: 38%;
+  background: #281a10;
+  border: 3px solid  #281a10;
+  border-radius: 0% 0% 50% 50%;
+  overflow: hidden;
+}
+
+
+.beaver-tongue {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  background: #f2726b;
+  border-radius: 50%;
+  bottom: -15%;
+  left: 10%;
+}
+
+.beaver-cheek-left,
+.beaver-cheek-right{
+  position: absolute;
+  z-index: 4;
+  width: 12%;
+  height: 11%;
+  background: #b1784d;
+    background: -webkit-linear-gradient(top, rgb(177, 120, 77) 70%,  rgb(153, 83, 51) 75%);
+    background: linear-gradient(to bottom, rgb(177, 120, 77) 70%,  rgb(153, 83, 51) 75%);
+  border: 3px solid #000;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+}
+
+.beaver-cheek-left {
+    top: 24%;
+    left: 20.5%;
+}
+.beaver-cheek-right {
+  right: 27%;
+  top: 26%;
+  height: 13%;
+  width: 15%;
+}
+
+/* BEAVER's ARMS */
+.beaver-left-arm,
+.beaver-right-arm {
+  position: absolute;
+  width: 7%;
+  height: 28%;
+  background: #b1784d;
+  border: 3px solid #2f170d;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 20%;
+}
+.beaver-left-arm {
+  z-index: -1;
+  top: 30%;
+  left: 16%;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+.beaver-right-arm {
+    right: 22%;
+    top: 18%;
+    -webkit-transform: rotate(143deg); */
+    transform: rotate(143deg);
+    transition: all 1s ease;
+    transform-origin: left bottom;
+}
+.beaver-left-arm-inner1,
+.beaver-left-arm-inner2,
+.beaver-right-arm-inner1,
+.beaver-right-arm-inner2{
+  position: absolute;
+  top: -20%;
+  width: 170%;
+  height: 30%;
+  background: #b1784d;
+  border-radius: 50% 50% 50% 0;
+  border: 3px solid #2f170d;
+  border-bottom-color: transparent;
+}
+
+.beaver-left-arm-inner1 {
+  left: -80%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.beaver-left-arm-inner2 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: -1%;
+    border-bottom-color: #2f170d;
+    border-left-color: transparent;
+}
+
+.beaver-right-arm-inner1 {
+  right: -85%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-bottom-color: #2f170d;
+  border-left-color: transparent;
+}
+.beaver-right-arm-inner2 {
+  right: -5%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+
+}
+
+/* BEAVER's TAIL */
+.beaver-body-tail {
+    position: absolute;
+    z-index: -1;
+    right: -17%;
+    top: 3%;
+    width: 40%;
+    height: 75%;
+    background: #753d19;
+    border: 5px solid #412014;
+    box-shadow: 1px 15px 1px #412014;
+    border-radius: 50% 50% 50% 1%;
+    -webkit-transform: rotate(15deg); */
+    transform: rotate(15deg);
+    transform-origin: left bottom;     
+}
+.beaver-body-tail-inner {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 30%;
+  height: 70%;
+  background: #985123;
+  border-radius: 50% 50% 50% 0;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+/* BEAVER's FEET */
+.beaver-left-foot,
+.beaver-right-foot{
+  position: absolute;
+  width: 25%;
+  height: 20%;
+  bottom: -8%;
+  background: #b1784d;
+  border: 4px solid #2f170d;
+  z-index: -1;
+}
+
+.beaver-left-foot {
+    left: 6%;
+    border-radius: 100% 40% 50% 50%;
+}
+.beaver-right-foot {
+    right: 6%;
+    border-radius: 40% 100% 50% 50%;
+}
+
+.beaver-left-foot-inner,
+.beaver-right-foot-inner{
+  position: absolute;
+  bottom: 3%;
+  width: 30%;
+  height: 40%;
+  border: 3px solid #2f170d;
+  border-radius: 10%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.beaver-left-foot-inner {
+    left: 0%;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+}
+.beaver-right-foot-inner {
+    right: 0%;
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+}
+	</style>
+</head>
+<body>
+<h1>Daily CSS Images: Beaver</h1>
+<div class="beaver-wrapper">
+    <div class="beaver-ear-left">
+    <div class="beaver-ear-left-inner"></div>
+    </div>
+    <div class="beaver-ear-right">
+      <div class="beaver-ear-right-inner"></div>
+    </div>
+  <div class="beaver-eyebrow-left"></div>
+    <div class="beaver-eyebrow-right"></div>
+      <div class="beaver-cheek-left"></div>
+        <div class="beaver-cheek-right"></div>
+  <div class="beaver-head">
+    <div class="beaver-eye-left">
+    <div class="beaver-eye-left-inner"></div>
+    </div>
+    <div class="beaver-eye-right">
+      <div class="beaver-eye-right-inner"></div>
+    </div>
+       <div class="beaver-nose">
+         <div class="beaver-nose-inner"></div>
+   </div>
+      <div class="beaver-teeth-container"></div>
+    <div class="beaver-mouth">
+      <div class="beaver-tongue"></div>
+   </div>
+     <!-- head-body -->
+        <div class="beaver-body-bottom"></div>
+  </div>
+    <div class="beaver-body-tail">
+      <div class="beaver-body-tail-inner"></div></div>
+    <div class="beaver-body-inner"></div>
+    <div class="beaver-left-arm">
+      <div class="beaver-left-arm-inner1"></div>
+         <div class="beaver-left-arm-inner2"></div>
+  </div>
+    <div class="beaver-right-arm">
+            <div class="beaver-right-arm-inner1"></div>
+         <div class="beaver-right-arm-inner2"></div>
+  </div>
+    <div class="beaver-left-foot">
+      <div class="beaver-left-foot-inner"></div>
+    </div>
+    <div class="beaver-right-foot">
+      <div class="beaver-right-foot-inner"></div>
+    </div>
+
+ 
+</div>
+
+</body>
+</html>

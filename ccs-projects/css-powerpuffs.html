@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Powerpuff Girls</title>
+	<style>
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: lightgrey;
+}
+.girl-wrapper {
+  display: inline-block;
+  margin: 10% 1% 10% 3%;
+  position: relative;
+  width: 30%;
+  max-width: 230px;
+}
+.girl-head {
+  width: 100%;
+  border: 7px solid black;
+  border-radius: 50%;
+  background: #fddcc9;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 80.5%;
+}
+.girl-body {
+ position: absolute;
+  z-index: -1;
+  bottom: -100px;
+  left: calc(50% - 50px);
+  transform: scaleY(1.3) perspective(5px)
+ rotateX(2deg);
+transform-origin: bottom;
+  width: 100px;
+  height: 250px;
+  background: #46b82f;
+  border: 7px solid black;
+}
+
+.girl-body:before,
+.girl-body:after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    background: #fddcc9;
+    top: 69px;
+    right: 100%;
+    border-radius: 100% 0 0 100% / 50%;
+    border: 7px solid black;
+    z-index: 31;
+}
+
+.girl-body:after {
+  transform: scaleX(-1);
+  left: 100%;
+}
+
+.girl-body .girl-body-legs {
+    position: absolute;
+    bottom: -30px;
+    width: 50px;
+    background: white;
+    border: 5px solid black;
+    height: 27px;
+    left: 20px;
+}
+.girl-body .girl-body-legs:before {
+  content: "";
+    width: 4px;
+    height: 100%;
+    background: black;
+    position: absolute;
+    left: calc(50% - 2px);
+}
+.girl-blossom .girl-body {
+	background: #ec6b6f;
+}
+.girl-bubbles .girl-body {
+	background: #38abe9;
+}
+
+
+.girl-body-stripe {
+    width: 100%;
+    height: 50px;
+    background: black;
+    position: absolute;
+    top: 60%;
+}
+.girl-blossom .girl-back-hair {
+    position: absolute;
+    width: 160px;
+    height: 140px;
+    background: #f1a931;
+    bottom: -86px;
+    left: 34px;
+    z-index: -1;
+    transform: scaleY(1.3) perspective(5px) rotateX(2deg);
+    transform-origin: bottom;
+    border: 5px solid;
+    border-radius: 1px;
+}
+
+.girl-blossom .girl-back-hair:before,
+.girl-blossom .girl-back-hair:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    background: #f1a931;
+    width: 15px;
+    height: 19px;
+    border-radius: 0 0 0px 40px;
+    z-index: -3;
+    border: 4px solid;
+    border-right: 0;
+}
+.girl-blossom .girl-back-hair:before {
+    left: -21px;
+}
+.girl-blossom .girl-back-hair:after {
+    transform: scaleX(-1);
+    right: -21px;
+}
+.girl-blossom .girl-hair {
+   position: absolute;
+   top: -120px;
+   left: -10px;
+   width: 100%;
+   z-index: 2;
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid transparent;
+    border-top: 120px solid #f1a931; 
+    border-left: 120px solid #f1a931;
+    border-right: 120px solid #f1a931;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+
+.girl-eye-left, .girl-eye-right {
+  background: white;
+  width: 13%;
+  height: 15%;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+}
+.girl-eye-left {
+    left: 23.5%;
+    box-shadow: 
+    -3px 10px 1px 22px black,
+    -11px 12px 1px 30px #ec6b6f,
+    -16px 15px 1px 32px white,
+    -16px 14px 1px 34px black;
+}
+.girl-eye-right {
+  right: 23.5%;
+    box-shadow: 
+    3px 10px 1px 22px black,
+    11px 12px 1px 30px #ec6b6f,
+    16px 15px 1px 32px white,
+    16px 14px 1px 34px black;
+}
+
+.girl-eye-left:hover,
+.girl-eye-right:hover {
+      box-shadow: 3px 10px 1px 22px #fddcc9, 11px 12px 1px 30px #fddcc9, 16px 15px 1px 32px #fddcc9, 16px 14px 1px 34px black;
+  background: #fddcc9;
+}
+
+.girl-mouth {
+    width: 40px;
+    height: 25px;
+    border: solid 4px black;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 20px);
+    border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+    border-color: transparent black black black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.girl-mouth:before {
+    content: "";
+    width: 32px;
+    border: 7px solid #fddcc9;
+    height: 41px;
+    border-radius: 50%;
+    position: absolute;
+    top: -27px;
+    left: -7px;
+}
+
+.girl-mouth:hover {
+  width: 40px;
+  height: 29px;
+   border: solid 5px black;
+   position: absolute;
+   bottom: 20px;
+   left: calc(50% - 20px);
+  border-radius: 50% 50% 50% 50% / 1% 1% 100% 100%;
+    border-color: white black black black;
+  background: brown;
+}
+
+.girl-blossom .girl-pony-tail-left:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    background: #d82e39;
+    bottom: 10%;
+    left: 85%;
+    border: 2px solid black;
+    border-radius: 35%;
+}
+.girl-blossom .girl-pony-tail-left,
+.girl-blossom .girl-pony-tail-right {
+    background: #d82e39;
+    position: absolute;
+    top: -41%;
+    width: 26%;
+    height: 50%;
+    border-radius: 10% 100% 0 50%;
+    border: 4px solid black;
+}
+.girl-blossom .girl-pony-tail-left {
+     left: 22%;
+}
+
+.girl-blossom .girl-pony-tail-right {
+     right: 22%;
+     -webkit-transform: scaleX(-1);
+             transform: scaleX(-1);
+}
+
+
+/* Yellow hair girl */
+.girl-bubbles {
+    left: -40px;
+    z-index: -1;
+   // -webkit-transform: perspective(200px) rotateY(165deg);
+          //  transform: perspective(200px) rotateY(165deg);
+}
+
+.girl-bubbles .girl-eye-left {
+      box-shadow: 
+    -3px 10px 1px 22px black,
+    -11px 12px 1px 30px #38abe9,
+    -16px 15px 1px 32px white,
+    -16px 14px 1px 34px black;
+}
+.girl-bubbles .girl-eye-right {
+      box-shadow: 
+    3px 10px 1px 22px black,
+    11px 12px 1px 30px #38abe9,
+    16px 15px 1px 32px white,
+    16px 14px 1px 34px black;
+}
+
+.girl-bubbles .girl-hair {
+    width: 120px;
+    height: 120px;
+    background: #fded62;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    right: 100%;
+    top: -60px;
+    border: 3px solid transparent;
+    z-index: 2;
+    border-bottom-color: black;
+}
+
+.girl-bubbles .girl-hair:after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 120px;
+    background: #fded62;
+    border-radius: 50%;
+    right: 0;
+    left: 68%;
+    border: 3px solid transparent;
+    border-bottom-color: black;
+    top: -10px;
+}
+.girl-bubbles .girl-pony-tail-left,
+.girl-bubbles .girl-pony-tail-right {
+    position: absolute;
+    right: -40px;
+    background: #fded62;
+    width: 80px;
+    height: 60px;
+    border-radius: 10px 200px 0 200px;
+    border: 4px solid black;
+    top: 25px;
+}
+.girl-bubbles .girl-pony-tail-left {
+  left: -40px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+
+/* Green girl */
+
+.girl-buttercup {
+      left: 4%;
+/*      -webkit-transform: perspective(200px) rotateY(-165deg);
+    transform: perspective(200) rotateY(-165deg);*/
+}
+
+.girl-buttercup .girl-mouth {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 40px;
+  height: 29px;
+   border: solid 5px black;
+   position: absolute;
+   bottom: 20px;
+   left: calc(50% - 20px);
+  border-radius: 50% 50% 50% 50% / 1% 1% 100% 100%;
+    border-color: white black black black;
+    background: brown;
+}
+
+
+.girl-buttercup .girl-eye-left {
+      box-shadow: 
+    -3px 10px 1px 22px black,
+    -11px 12px 1px 30px #46b82f,
+    -16px 15px 1px 32px white,
+    -16px 14px 1px 34px black;
+}
+.girl-buttercup .girl-eye-right {
+      box-shadow: 
+    3px 10px 1px 22px black,
+    11px 12px 1px 30px #46b82f,
+    16px 15px 1px 32px white,
+    16px 14px 1px 34px black;
+}
+
+.girl-buttercup .girl-hair {
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%;
+  background: black;
+  z-index: 2;
+  position: absolute
+}
+
+.girl-buttercup .girl-hair:before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 20px);
+  top: 15px;
+  width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid #fddcc9;
+}
+.girl-buttercup .girl-pony-tail-left,
+.girl-buttercup .girl-pony-tail-right {
+    position: absolute;
+    right: -15px;
+    top: 30%;
+    background: black;
+    width: 35%;
+    height: 30%;
+    border-radius: 0 0 80px 80px;
+}
+.girl-buttercup .girl-pony-tail-left {
+  left: -15px;
+}
+	</style>
+</head>
+<body>
+
+
+<div class="girl-wrapper girl-buttercup">
+   <div class="girl-pony-tail-left"></div>
+     <div class="girl-pony-tail-right"></div>
+  <div class="girl-head">
+    <div class="girl-hair"></div>
+    <div class="girl-eye-left"></div>
+    <div class="girl-eye-right"></div>
+    <div class="girl-mouth"></div>
+  </div>
+  <div class="girl-body">
+    <div class="girl-body-stripe"></div>
+    <div class="girl-body-legs"></div>
+  </div>
+</div>
+
+
+<div class="girl-wrapper girl-blossom">
+  <div class="girl-back-hair"></div>
+     <div class="girl-pony-tail-left"></div>
+     <div class="girl-pony-tail-right"></div>
+  <div class="girl-head">
+    <div class="girl-hair"></div>
+    <div class="girl-eye-left"></div>
+    <div class="girl-eye-right"></div>
+    <div class="girl-mouth"></div>
+  </div>
+    <div class="girl-body">
+      <div class="girl-body-stripe"></div>
+      <div class="girl-body-legs"></div>
+  </div>
+</div>
+
+<div class="girl-wrapper girl-bubbles">
+   <div class="girl-pony-tail-left"></div>
+     <div class="girl-pony-tail-right"></div>
+  <div class="girl-head">
+    <div class="girl-hair"></div>
+    <div class="girl-eye-left"></div>
+    <div class="girl-eye-right"></div>
+    <div class="girl-mouth"></div>
+  </div>
+    <div class="girl-body">
+      <div class="girl-body-stripe"></div>
+      <div class="girl-body-legs"></div>
+  </div>
+</div>
+
+
+
+	
+</body>
+</html>
