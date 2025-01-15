@@ -373,7 +373,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
 
-            $.getJSON('http://slyka85.github.io/js/modals-json.json', function(data) {
+            $.getJSON('https://slyka85.github.io/js/modals-json.json', function(data) {
                 var modalTemplate = $("#modal-preview-template").html();
                 var modalHtml = Mustache.to_html(modalTemplate, data);
                 $('.modals-preview-target').html(modalHtml);
